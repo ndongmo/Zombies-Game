@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<GUILayout version="4" >
+    <Window type="VerticalLayoutContainer" name="vlc_config" >
+        <Property name="Area" value="{{0,-53},{0,-5},{1,-53},{1,-5}}" />
+        <Window type="TaharezLook/GroupBox" name="gb_playWith" >
+            <Property name="Area" value="{{0,-1},{0,7},{0.3,334},{0.3,-137}}" />
+            <Property name="Text" value="Play with" />
+            <Property name="MaxSize" value="{{1,0},{1,0}}" />
+            <Property name="HorizontalAlignment" value="Centre" />
+            <Window type="TaharezLook/RadioButton" name="rb_keyboard" >
+                <Property name="Area" value="{{0,0},{0,0},{0,227},{0,32}}" />
+                <Property name="Text" value="Keyboard &amp; Mouse" />
+                <Property name="Selected" value="true" />
+            </Window>
+            <Window type="TaharezLook/RadioButton" name="rb_joystick" >
+                <Property name="Area" value="{{0,-27},{0,0},{0,171},{0,31}}" />
+                <Property name="Text" value="Joystick" />
+                <Property name="HorizontalAlignment" value="Right" />
+            </Window>
+        </Window>
+        <Window type="TaharezLook/Button" name="bt_save" >
+            <Property name="Area" value="{{0,-113.5},{0,-11},{0,31.5},{0,21}}" />
+            <Property name="Text" value="Save" />
+            <Property name="VerticalAlignment" value="Bottom" />
+            <Property name="HorizontalAlignment" value="Centre" />
+        </Window>
+        <Window type="TaharezLook/Button" name="bt_cancel" >
+            <Property name="Area" value="{{0,121.5},{0,-10},{0,266.5},{0,22}}" />
+            <Property name="Text" value="Cancel" />
+            <Property name="VerticalAlignment" value="Bottom" />
+            <Property name="HorizontalAlignment" value="Centre" />
+        </Window>
+        <Window type="TaharezLook/GroupBox" name="gb_keyConfig" >
+            <Property name="Area" value="{{0,5},{0,150},{0.3,341},{0.3,444}}" />
+            <Property name="Text" value="Key/Button configuration" />
+            <Property name="MaxSize" value="{{1,0},{1,0}}" />
+            <Property name="HorizontalAlignment" value="Centre" />
+            <Window type="TaharezLook/RadioButton" name="rb_action" >
+                <Property name="Area" value="{{0,0},{0.093361,0},{0,230},{0.093361,32}}" />
+                <Property name="Text" value="Action" />
+            </Window>
+            <Window type="TaharezLook/RadioButton" name="rb_up" >
+                <Property name="Area" value="{{0,0},{0.342324,164},{0,230},{0.342324,196}}" />
+                <Property name="Text" value="Go Up" />
+            </Window>
+            <Window type="TaharezLook/RadioButton" name="rb_attack" >
+                <Property name="Area" value="{{0,0},{0,0},{0,230},{0,32}}" />
+                <Property name="Text" value="Attack" />
+            </Window>
+            <Window type="TaharezLook/RadioButton" name="rb_right" >
+                <Property name="Area" value="{{0.00852272,-6},{0.582988,163},{0.00852272,222},{0.582988,195}}" />
+                <Property name="Text" value="Go Right" />
+            </Window>
+            <Window type="TaharezLook/RadioButton" name="rb_left" >
+                <Property name="Area" value="{{0,0},{0.508299,164},{0,230},{0.508299,196}}" />
+                <Property name="Text" value="Go Left" />
+            </Window>
+            <Window type="TaharezLook/RadioButton" name="rb_down" >
+                <Property name="Area" value="{{0,0},{0.425311,170},{0,230},{0.425311,202}}" />
+                <Property name="Text" value="Go Down" />
+            </Window>
+            <Window type="TaharezLook/Label" name="lb_action" >
+                <Property name="Area" value="{{0,0},{0.0912863,0},{0.284091,0},{0.157676,0}}" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Property name="HorizontalAlignment" value="Right" />
+            </Window>
+            <Window type="TaharezLook/Label" name="lb_up" >
+                <Property name="Area" value="{{0.00142045,0},{0.6639,20},{0.285511,0},{0.73029,20}}" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Property name="HorizontalAlignment" value="Right" />
+            </Window>
+            <Window type="TaharezLook/Label" name="lb_attack" >
+                <Property name="Area" value="{{0.00142045,0},{0,0},{0.285511,0},{0.06639,0}}" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Property name="HorizontalAlignment" value="Right" />
+            </Window>
+            <Window type="TaharezLook/Label" name="lb_right" >
+                <Property name="Area" value="{{0,0},{0.910788,16},{0.28267,0},{0.977178,16}}" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Property name="HorizontalAlignment" value="Right" />
+            </Window>
+            <Window type="TaharezLook/Label" name="lb_left" >
+                <Property name="Area" value="{{0,1},{0.829876,14},{0.284091,1},{0.896266,14}}" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Property name="HorizontalAlignment" value="Right" />
+            </Window>
+            <Window type="TaharezLook/Label" name="lb_down" >
+                <Property name="Area" value="{{0,1},{0.748963,13},{0.284091,1},{0.815353,13}}" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Property name="HorizontalAlignment" value="Right" />
+            </Window>
+            <Window type="TaharezLook/RadioButton" name="rb_changeW" >
+                <Property name="Area" value="{{0,0},{0.186722,0},{0,232},{0.186722,29}}" />
+                <Property name="Text" value="Change weapon" />
+            </Window>
+            <Window type="TaharezLook/Label" name="lb_changeW" >
+                <Property name="Area" value="{{0,0},{0.180498,0},{0.284091,0},{0.246888,0}}" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Property name="HorizontalAlignment" value="Right" />
+            </Window>
+            <Window type="TaharezLook/RadioButton" name="rb_changeO" >
+                <Property name="Area" value="{{0,0},{0.263485,3},{0,230},{0.263485,35}}" />
+                <Property name="Text" value="Change item" />
+            </Window>
+            <Window type="TaharezLook/Label" name="lb_changeO" >
+                <Property name="Area" value="{{0,0},{0.263485,0},{0.284091,0},{0.329876,0}}" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Property name="HorizontalAlignment" value="Right" />
+            </Window>
+            <Window type="TaharezLook/RadioButton" name="rb_useO" >
+                <Property name="Area" value="{{0,-1},{0.263485,47},{0,229},{0.263485,79}}" />
+                <Property name="Text" value="Use item" />
+                <Property name="Selected" value="true" />
+            </Window>
+            <Window type="TaharezLook/Label" name="lb_useO" >
+                <Property name="Area" value="{{0,-1},{0.263485,44},{0.284091,-1},{0.329876,44}}" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Property name="HorizontalAlignment" value="Right" />
+            </Window>
+            <Window type="TaharezLook/RadioButton" name="rb_pause" >
+                <Property name="Area" value="{{0,-1},{0.342324,44},{0,229},{0.342324,76}}" />
+                <Property name="Text" value="Pause" />
+            </Window>
+            <Window type="TaharezLook/Label" name="lb_pause" >
+                <Property name="Area" value="{{0.00142045,-2},{0.6639,-109},{0.285511,-2},{0.73029,-109}}" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Property name="HorizontalAlignment" value="Right" />
+            </Window>
+            <Window type="TaharezLook/Label" name="lb_run" >
+                <Property name="Area" value="{{0.00142045,0},{0.6639,-65},{0.285511,0},{0.73029,-65}}" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Property name="HorizontalAlignment" value="Right" />
+            </Window>
+            <Window type="TaharezLook/RadioButton" name="rb_run" >
+                <Property name="Area" value="{{0,0},{0.342324,84},{0,230},{0.342324,116}}" />
+                <Property name="Text" value="Run" />
+            </Window>
+            <Window type="TaharezLook/Label" name="lb_reload" >
+                <Property name="Area" value="{{0.00142045,0},{0.6639,-25},{0.285511,0},{0.73029,-25}}" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Property name="HorizontalAlignment" value="Right" />
+            </Window>
+            <Window type="TaharezLook/RadioButton" name="rb_reload" >
+                <Property name="Area" value="{{0,0},{0.342324,124},{0,230},{0.342324,156}}" />
+                <Property name="Text" value="Reload" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

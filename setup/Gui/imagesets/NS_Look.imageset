@@ -1,0 +1,13 @@
+<Imageset autoScaled="true" imagefile="NS_Look.png" name="NS_Look" nativeHorzRes="640" nativeVertRes="384" version="2">
+    <Image height="128" name="background" width="128" xPos="0" yPos="0" />
+    <Image height="128" name="bag" width="128" xPos="128" yPos="0" />
+    <Image height="128" name="flashlight" width="128" xPos="256" yPos="0" />
+    <Image height="128" name="key" width="128" xPos="384" yPos="0" />
+    <Image height="116" name="medicine" width="128" xPos="512" yPos="0" />
+    <Image height="128" name="pistol" width="128" xPos="0" yPos="128" />
+    <Image height="128" name="rifle" width="128" xPos="128" yPos="128" />
+    <Image height="128" name="shotgun" width="128" xPos="256" yPos="128" />
+    <Image height="128" name="ammo_1" width="128" xPos="384" yPos="128" />
+    <Image height="128" name="ammo_2" width="128" xPos="512" yPos="128" />
+    <Image height="128" name="ammo_3" width="128" xPos="0" yPos="256" />
+</Imageset>

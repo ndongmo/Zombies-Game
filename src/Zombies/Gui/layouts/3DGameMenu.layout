@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<GUILayout version="4" >
+    <Window type="TaharezLook/StaticImage" name="StaticImage" >
+        <Property name="Area" value="{{0,183},{0,47},{0,651},{0,519}}" />
+        <Property name="Text" value="ggg" />
+        <Property name="MaxSize" value="{{1,0},{1,0}}" />
+        <Window type="TaharezLook/Button" name="b_quit" >
+            <Property name="Area" value="{{0,139},{0,309},{0,329},{0,366}}" />
+            <Property name="Text" value="Quitter" />
+        </Window>
+        <Window type="TaharezLook/Button" name="b_config" >
+            <Property name="Area" value="{{0,139},{0,199},{0,328},{0,252}}" />
+            <Property name="Text" value="Configuration" />
+        </Window>
+        <Window type="TaharezLook/Button" name="b_new" >
+            <Property name="Area" value="{{0,132},{0,103},{0,332},{0,159}}" />
+            <Property name="Text" value="Nouvelle Partie" />
+        </Window>
+    </Window>
+</GUILayout>

@@ -1,0 +1,15 @@
+--- cegui/include/CEGUI/Window.h	Mon Apr 01 16:40:25 2013 +0200
++++ cegui/include/CEGUI/Window.h	Mon Apr 01 16:41:26 2013 +0200
+@@ -3458,6 +3458,12 @@
+     void markCachedWindowRectsInvalid();
+     void layoutLookNFeelChildWidgets();
+ 
++    Window* getChildAtPosition(const Vector2f& position,
++                               bool (Window::*hittestfunc)(const Vector2f&, bool) const,
++                               bool allow_disabled = false) const;
++
++    bool isHitTargetWindow(const Vector2f& position, bool allow_disabled) const;
++
+     /*************************************************************************
+         Properties for Window base class
+     *************************************************************************/

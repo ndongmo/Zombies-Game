@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<GUILayout version="4" >
+    <Window type="DefaultWindow" name="wnd_node" >
+        <Property name="Area" value="{{0,0},{0,0},{1,0},{1,0}}" />
+        <Property name="Text" value="Node" />
+        <Property name="MaxSize" value="{{1,0},{1,0}}" />
+        <Window type="TaharezLook/GroupBox" name="gbx_members" >
+            <Property name="Area" value="{{0,5},{0,5},{0.5,-5},{1,-5}}" />
+            <Property name="Text" value="Members" />
+            <Property name="MaxSize" value="{{1,0},{1,0}}" />
+            <Window type="TaharezLook/Spinner" name="spn_width" >
+                <Property name="Area" value="{{0.5,0},{0,0},{1,-1},{0.13,0}}" />
+                <Property name="Text" value="1" />
+                <Property name="CurrentValue" value="1" />
+                <Property name="MinimumValue" value="0" />
+                <AutoWindow namePath="__auto_editbox__" >
+                    <Property name="Text" value="1" />
+                    <Property name="ValidationString" value="-?\d*" />
+                </AutoWindow>
+                <AutoWindow namePath="__auto_incbtn__" >
+                    <Property name="WantsMultiClickEvents" value="false" />
+                    <Property name="MouseAutoRepeatEnabled" value="true" />
+                </AutoWindow>
+                <AutoWindow namePath="__auto_decbtn__" >
+                    <Property name="WantsMultiClickEvents" value="false" />
+                    <Property name="MouseAutoRepeatEnabled" value="true" />
+                </AutoWindow>
+            </Window>
+            <Window type="TaharezLook/Label" name="lbl_width" >
+                <Property name="Area" value="{{0,0},{0,0},{0.5,0},{0.13,0}}" />
+                <Property name="Text" value="Width" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Property name="HorzFormatting" value="LeftAligned" />
+            </Window>
+            <Window type="TaharezLook/Spinner" name="spn_height" >
+                <Property name="Area" value="{{0.5,1},{0.15,0},{1,-1},{0.28,0}}" />
+                <Property name="Text" value="1" />
+                <Property name="CurrentValue" value="1" />
+                <Property name="MinimumValue" value="0" />
+                <AutoWindow namePath="__auto_editbox__" >
+                    <Property name="Text" value="1" />
+                    <Property name="ValidationString" value="-?\d*" />
+                </AutoWindow>
+                <AutoWindow namePath="__auto_incbtn__" >
+                    <Property name="WantsMultiClickEvents" value="false" />
+                    <Property name="MouseAutoRepeatEnabled" value="true" />
+                </AutoWindow>
+                <AutoWindow namePath="__auto_decbtn__" >
+                    <Property name="WantsMultiClickEvents" value="false" />
+                    <Property name="MouseAutoRepeatEnabled" value="true" />
+                </AutoWindow>
+            </Window>
+            <Window type="TaharezLook/Label" name="lbl_height" >
+                <Property name="Area" value="{{0,1},{0.15,0},{0.5,-1},{0.28,0}}" />
+                <Property name="Text" value="Height" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Property name="HorzFormatting" value="LeftAligned" />
+            </Window>
+        </Window>
+        <Window type="TaharezLook/GroupBox" name="gbx_selected" >
+            <Property name="Area" value="{{0.5,5},{0,5},{1,-5},{1,-5}}" />
+            <Property name="Text" value="Selected" />
+            <Property name="MaxSize" value="{{1,0},{1,0}}" />
+            <Window type="TaharezLook/RadioButton" name="rbt_this" >
+                <Property name="Area" value="{{0,0},{0,0},{1,-5},{0.13,-2}}" />
+                <Property name="Text" value="This (node)" />
+                <Property name="Selected" value="true" />
+            </Window>
+            <Window type="TaharezLook/RadioButton" name="rbt_center" >
+                <Property name="Area" value="{{0,0},{0.15,0},{1,-5},{0.28,-2}}" />
+                <Property name="Text" value="Center" />
+            </Window>
+            <Window type="TaharezLook/RadioButton" name="rbt_edge" >
+                <Property name="Area" value="{{0,0},{0.3,0},{1,-5},{0.43,-2}}" />
+                <Property name="Text" value="Edge" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

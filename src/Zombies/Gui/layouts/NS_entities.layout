@@ -1,0 +1,1222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<GUILayout version="4" >
+    <Window type="DefaultWindow" name="wnd_entities" >
+        <Property name="Area" value="{{0,0},{0,0},{0.4,11},{1,0}}" />
+        <Property name="MaxSize" value="{{1,0},{1,0}}" />
+        <Window type="TaharezLook/TabContentPane" name="ctn_human" >
+            <Property name="Area" value="{{0,10},{0.4,5},{1,-10},{0.7,5}}" />
+            <Property name="Text" value="Human" />
+            <Property name="MaxSize" value="{{1,0},{1,0}}" />
+            <Window type="TaharezLook/GroupBox" name="gbx_members" >
+                <Property name="Area" value="{{0,5},{0,5},{0.5,-5},{1,-5}}" />
+                <Property name="Text" value="Members" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Window type="TaharezLook/Label" name="lbl_speed" >
+                    <Property name="Area" value="{{0,0},{0,0},{0.22,-2},{0.13,0}}" />
+                    <Property name="Text" value="Speed" />
+                    <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                    <Property name="HorzFormatting" value="LeftAligned" />
+                </Window>
+                <Window type="TaharezLook/Spinner" name="spn_speed" >
+                    <Property name="Area" value="{{0.25,0},{0,0},{0.5,-2},{0.13,0}}" />
+                    <Property name="Text" value="1" />
+                    <Property name="CurrentValue" value="1" />
+                    <Property name="MinimumValue" value="0" />
+                    <Property name="TextInputMode" value="FloatingPoint" />
+                    <AutoWindow namePath="__auto_editbox__" >
+                        <Property name="Text" value="1" />
+                        <Property name="ValidationString" value="-?\d*\.?\d*" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_incbtn__" >
+                        <Property name="WantsMultiClickEvents" value="false" />
+                        <Property name="MouseAutoRepeatEnabled" value="true" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_decbtn__" >
+                        <Property name="WantsMultiClickEvents" value="false" />
+                        <Property name="MouseAutoRepeatEnabled" value="true" />
+                    </AutoWindow>
+                </Window>
+                <Window type="TaharezLook/Spinner" name="spn_health" >
+                    <Property name="Area" value="{{0.75,0},{0,0},{1,-2},{0.13,0}}" />
+                    <Property name="Text" value="1" />
+                    <Property name="CurrentValue" value="1" />
+                    <Property name="MinimumValue" value="0" />
+                    <Property name="TextInputMode" value="FloatingPoint" />
+                    <AutoWindow namePath="__auto_editbox__" >
+                        <Property name="Text" value="1" />
+                        <Property name="ValidationString" value="-?\d*\.?\d*" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_incbtn__" >
+                        <Property name="WantsMultiClickEvents" value="false" />
+                        <Property name="MouseAutoRepeatEnabled" value="true" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_decbtn__" >
+                        <Property name="WantsMultiClickEvents" value="false" />
+                        <Property name="MouseAutoRepeatEnabled" value="true" />
+                    </AutoWindow>
+                </Window>
+                <Window type="TaharezLook/Label" name="lbl_health" >
+                    <Property name="Area" value="{{0.5,2},{0,0},{0.75,-2},{0.13,0}}" />
+                    <Property name="Text" value="Health" />
+                    <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                    <Property name="HorzFormatting" value="LeftAligned" />
+                </Window>
+            </Window>
+        </Window>
+        <Window type="TaharezLook/TabContentPane" name="ctn_player" >
+            <Property name="Area" value="{{0,10},{0.4,5},{1,-10},{0.7,5}}" />
+            <Property name="Text" value="Player" />
+            <Property name="MaxSize" value="{{1,0},{1,0}}" />
+            <Window type="TaharezLook/GroupBox" name="gbx_members" >
+                <Property name="Area" value="{{0,5},{0,5},{0.5,-5},{1,-5}}" />
+                <Property name="Text" value="Members" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Window type="TaharezLook/Label" name="lbl_keys" >
+                    <Property name="Area" value="{{0,0},{0,0},{0.3,-2},{0.13,0}}" />
+                    <Property name="Text" value="Nb.Keys" />
+                    <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                    <Property name="HorzFormatting" value="LeftAligned" />
+                </Window>
+                <Window type="TaharezLook/Spinner" name="spn_keys" >
+                    <Property name="Area" value="{{0.3,0},{0,0},{0.5,-2},{0.13,0}}" />
+                    <Property name="Text" value="0" />
+                    <Property name="MaximumValue" value="99" />
+                    <Property name="MinimumValue" value="0" />
+                    <AutoWindow namePath="__auto_editbox__" >
+                        <Property name="Text" value="0" />
+                        <Property name="ValidationString" value="-?\d*" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_incbtn__" >
+                        <Property name="WantsMultiClickEvents" value="false" />
+                        <Property name="MouseAutoRepeatEnabled" value="true" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_decbtn__" >
+                        <Property name="WantsMultiClickEvents" value="false" />
+                        <Property name="MouseAutoRepeatEnabled" value="true" />
+                    </AutoWindow>
+                </Window>
+                <Window type="TaharezLook/Checkbox" name="chb_lightOn" >
+                    <Property name="Area" value="{{0,0},{0.15,0},{0.5,-2},{0.27,0}}" />
+                    <Property name="Text" value="FlashLight" />
+                    <Property name="Selected" value="true" />
+                </Window>
+                <Window type="TaharezLook/Checkbox" name="chb_gun1" >
+                    <Property name="Area" value="{{0,0},{0.3,0},{0.5,-2},{0.43,0}}" />
+                    <Property name="Text" value="Gun 1" />
+                </Window>
+                <Window type="TaharezLook/Checkbox" name="chb_gun2" >
+                    <Property name="Area" value="{{0,0},{0.45,0},{0.5,-2},{0.58,0}}" />
+                    <Property name="Text" value="Gun 2" />
+                </Window>
+                <Window type="TaharezLook/Checkbox" name="chb_sourceLight" >
+                    <Property name="Area" value="{{0,0},{0.6,0},{0.5,-2},{0.73,0}}" />
+                    <Property name="Text" value="Source  light" />
+                    <Property name="Selected" value="true" />
+                </Window>
+                <Window type="TaharezLook/Checkbox" name="chb_aroundLight" >
+                    <Property name="Area" value="{{0,0},{0.75,0},{0.5,-2},{0.88,0}}" />
+                    <Property name="Text" value="Around  light" />
+                    <Property name="Selected" value="true" />
+                </Window>
+                <Window type="TaharezLook/Checkbox" name="chb_diffLight" >
+                    <Property name="Area" value="{{0,0},{0.9,0},{0.5,-2},{1,0}}" />
+                    <Property name="Text" value="Diffuse  light" />
+                    <Property name="Selected" value="true" />
+                </Window>
+                <Window type="TaharezLook/Label" name="lbl_speed" >
+                    <Property name="Area" value="{{0.5,2},{0,0},{0.75,-2},{0.13,0}}" />
+                    <Property name="Text" value="Speed" />
+                    <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                    <Property name="HorzFormatting" value="LeftAligned" />
+                </Window>
+                <Window type="TaharezLook/Spinner" name="spn_speed" >
+                    <Property name="Area" value="{{0.75,0},{0,0},{1,-2},{0.13,0}}" />
+                    <Property name="Text" value="1" />
+                    <Property name="CurrentValue" value="1" />
+                    <Property name="MinimumValue" value="0" />
+                    <Property name="TextInputMode" value="FloatingPoint" />
+                    <AutoWindow namePath="__auto_editbox__" >
+                        <Property name="Text" value="1" />
+                        <Property name="ValidationString" value="-?\d*\.?\d*" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_incbtn__" >
+                        <Property name="WantsMultiClickEvents" value="false" />
+                        <Property name="MouseAutoRepeatEnabled" value="true" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_decbtn__" >
+                        <Property name="WantsMultiClickEvents" value="false" />
+                        <Property name="MouseAutoRepeatEnabled" value="true" />
+                    </AutoWindow>
+                </Window>
+                <Window type="TaharezLook/Spinner" name="spn_health" >
+                    <Property name="Area" value="{{0.75,0},{0.15,0},{1,-2},{0.27,0}}" />
+                    <Property name="Text" value="1" />
+                    <Property name="CurrentValue" value="1" />
+                    <Property name="MinimumValue" value="0" />
+                    <Property name="TextInputMode" value="FloatingPoint" />
+                    <AutoWindow namePath="__auto_editbox__" >
+                        <Property name="Text" value="1" />
+                        <Property name="ValidationString" value="-?\d*\.?\d*" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_incbtn__" >
+                        <Property name="WantsMultiClickEvents" value="false" />
+                        <Property name="MouseAutoRepeatEnabled" value="true" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_decbtn__" >
+                        <Property name="WantsMultiClickEvents" value="false" />
+                        <Property name="MouseAutoRepeatEnabled" value="true" />
+                    </AutoWindow>
+                </Window>
+                <Window type="TaharezLook/Label" name="lbl_health" >
+                    <Property name="Area" value="{{0.5,2},{0.15,0},{0.75,-2},{0.27,0}}" />
+                    <Property name="Text" value="Health" />
+                    <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                    <Property name="HorzFormatting" value="LeftAligned" />
+                </Window>
+            </Window>
+            <Window type="TaharezLook/GroupBox" name="gbx_selected" >
+                <Property name="Area" value="{{0.5,5},{0,5},{1,-5},{1,-5}}" />
+                <Property name="Text" value="Selected" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Window type="TaharezLook/RadioButton" name="rbt_this" >
+                    <Property name="Area" value="{{0,0},{0,0},{0.5,-5},{0.13,-2}}" />
+                    <Property name="Text" value="This (player)" />
+                    <Property name="Selected" value="true" />
+                </Window>
+                <Window type="TaharezLook/RadioButton" name="rbt_gun1" >
+                    <Property name="Area" value="{{0,0},{0.15,0},{0.5,-5},{0.28,-2}}" />
+                    <Property name="Text" value="Gun 1" />
+                </Window>
+                <Window type="TaharezLook/RadioButton" name="rbt_gun2" >
+                    <Property name="Area" value="{{0,0},{0.3,0},{0.5,-5},{0.43,-2}}" />
+                    <Property name="Text" value="Gun 2" />
+                </Window>
+                <Window type="TaharezLook/RadioButton" name="rbt_sourceLight" >
+                    <Property name="Area" value="{{0,0},{0.45,0},{0.5,-5},{0.58,-2}}" />
+                    <Property name="Text" value="Source Light" />
+                </Window>
+                <Window type="TaharezLook/RadioButton" name="rbt_aroundLight" >
+                    <Property name="Area" value="{{0,0},{0.6,0},{0.5,-5},{0.73,-2}}" />
+                    <Property name="Text" value="Around Light" />
+                </Window>
+                <Window type="TaharezLook/RadioButton" name="rbt_diffLight" >
+                    <Property name="Area" value="{{0,0},{0.75,0},{0.5,-5},{0.88,-2}}" />
+                    <Property name="Text" value="Diffuse Light" />
+                </Window>
+            </Window>
+        </Window>
+        <Window type="TaharezLook/TabButton" name="ctn_zombie" >
+            <Property name="Area" value="{{0,10},{0.4,5},{1,-10},{0.7,5}}" />
+            <Property name="Text" value="Zombie" />
+            <Window type="TaharezLook/GroupBox" name="gbx_members" >
+                <Property name="Area" value="{{0,5},{0,5},{0.5,-5},{1,-5}}" />
+                <Property name="Text" value="Members" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Window type="TaharezLook/Label" name="lbl_speed" >
+                    <Property name="Area" value="{{0,0},{0,0},{0.22,-2},{0.13,-2}}" />
+                    <Property name="Text" value="Speed" />
+                    <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                    <Property name="HorzFormatting" value="LeftAligned" />
+                </Window>
+                <Window type="TaharezLook/Spinner" name="spn_speed" >
+                    <Property name="Area" value="{{0.25,0},{0,0},{0.5,-2},{0.13,0}}" />
+                    <Property name="Text" value="1" />
+                    <Property name="CurrentValue" value="1" />
+                    <Property name="MinimumValue" value="0" />
+                    <Property name="TextInputMode" value="FloatingPoint" />
+                    <AutoWindow namePath="__auto_editbox__" >
+                        <Property name="Text" value="1" />
+                        <Property name="ValidationString" value="-?\d*\.?\d*" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_incbtn__" >
+                        <Property name="WantsMultiClickEvents" value="false" />
+                        <Property name="MouseAutoRepeatEnabled" value="true" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_decbtn__" >
+                        <Property name="WantsMultiClickEvents" value="false" />
+                        <Property name="MouseAutoRepeatEnabled" value="true" />
+                    </AutoWindow>
+                </Window>
+                <Window type="TaharezLook/Spinner" name="spn_health" >
+                    <Property name="Area" value="{{0.75,0},{0,-1},{1,-2},{0.13,-2}}" />
+                    <Property name="Text" value="1" />
+                    <Property name="CurrentValue" value="1" />
+                    <Property name="MinimumValue" value="0" />
+                    <Property name="TextInputMode" value="FloatingPoint" />
+                    <AutoWindow namePath="__auto_editbox__" >
+                        <Property name="Text" value="1" />
+                        <Property name="ValidationString" value="-?\d*\.?\d*" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_incbtn__" >
+                        <Property name="WantsMultiClickEvents" value="false" />
+                        <Property name="MouseAutoRepeatEnabled" value="true" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_decbtn__" >
+                        <Property name="WantsMultiClickEvents" value="false" />
+                        <Property name="MouseAutoRepeatEnabled" value="true" />
+                    </AutoWindow>
+                </Window>
+                <Window type="TaharezLook/Label" name="lbl_health" >
+                    <Property name="Area" value="{{0.5,2},{0,0},{0.75,-2},{0.13,-2}}" />
+                    <Property name="Text" value="Health" />
+                    <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                    <Property name="HorzFormatting" value="LeftAligned" />
+                </Window>
+                <Window type="TaharezLook/Label" name="lbl_damage" >
+                    <Property name="Area" value="{{0,0},{0.15,-0},{0.26,-2},{0.28,-2}}" />
+                    <Property name="Text" value="Damage" />
+                    <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                    <Property name="HorzFormatting" value="LeftAligned" />
+                </Window>
+                <Window type="TaharezLook/Spinner" name="spn_damage" >
+                    <Property name="Area" value="{{0.26,0},{0.15,0},{0.5,-2},{0.28,-2}}" />
+                    <Property name="Text" value="1" />
+                    <Property name="CurrentValue" value="1" />
+                    <Property name="MinimumValue" value="0" />
+                    <Property name="TextInputMode" value="FloatingPoint" />
+                    <AutoWindow namePath="__auto_editbox__" >
+                        <Property name="Text" value="1" />
+                        <Property name="ValidationString" value="-?\d*\.?\d*" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_incbtn__" >
+                        <Property name="WantsMultiClickEvents" value="false" />
+                        <Property name="MouseAutoRepeatEnabled" value="true" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_decbtn__" >
+                        <Property name="WantsMultiClickEvents" value="false" />
+                        <Property name="MouseAutoRepeatEnabled" value="true" />
+                    </AutoWindow>
+                </Window>
+            </Window>
+        </Window>
+        <Window type="TaharezLook/TabContentPane" name="ctn_coffer" >
+            <Property name="Area" value="{{0,10},{0.4,5},{1,-10},{0.7,5}}" />
+            <Property name="Text" value="Coffer" />
+            <Property name="MaxSize" value="{{1,0},{1,0}}" />
+            <Window type="TaharezLook/GroupBox" name="gbx_members" >
+                <Property name="Area" value="{{0,5},{0,5},{0.7,-5},{1,-5}}" />
+                <Property name="Text" value="Members" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Window type="TaharezLook/Spinner" name="spn_health" >
+                    <Property name="Area" value="{{0.25,0},{0,0},{0.5,-2},{0.13,0}}" />
+                    <Property name="Text" value="1" />
+                    <Property name="CurrentValue" value="1" />
+                    <Property name="MinimumValue" value="0" />
+                    <Property name="TextInputMode" value="FloatingPoint" />
+                    <AutoWindow namePath="__auto_editbox__" >
+                        <Property name="Text" value="1" />
+                        <Property name="ValidationString" value="-?\d*\.?\d*" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_incbtn__" >
+                        <Property name="WantsMultiClickEvents" value="false" />
+                        <Property name="MouseAutoRepeatEnabled" value="true" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_decbtn__" >
+                        <Property name="WantsMultiClickEvents" value="false" />
+                        <Property name="MouseAutoRepeatEnabled" value="true" />
+                    </AutoWindow>
+                </Window>
+                <Window type="TaharezLook/Label" name="lbl_health" >
+                    <Property name="Area" value="{{0,0},{0,0},{0.23,-2},{0.13,0}}" />
+                    <Property name="Text" value="Health" />
+                    <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                    <Property name="HorzFormatting" value="LeftAligned" />
+                </Window>
+                <Window type="TaharezLook/Label" name="lbl_shootSound" >
+                    <Property name="Area" value="{{0,0},{0.15,0},{0.5,-2},{0.28,-2}}" />
+                    <Property name="Text" value="Shoot Sound" />
+                    <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                    <Property name="HorzFormatting" value="LeftAligned" />
+                </Window>
+                <Window type="TaharezLook/Combobox" name="cbx_shootSound" >
+                    <Property name="Area" value="{{0,0},{0.3,0},{0.5,-2},{0.7,-2}}" />
+                    <Property name="Text" value="None" />
+                    <AutoWindow namePath="__auto_editbox__" >
+                        <Property name="Text" value="None" />
+                        <Property name="ActiveSelectionColour" value="tl:FF6060FF tr:FF6060FF bl:FF6060FF br:FF6060FF" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_droplist__" >
+                        <AutoWindow namePath="__auto_hscrollbar__" >
+                            <AutoWindow namePath="__auto_incbtn__" >
+                                <Property name="RestoreOldCapture" value="true" />
+                            </AutoWindow>
+                            <AutoWindow namePath="__auto_decbtn__" >
+                                <Property name="RestoreOldCapture" value="true" />
+                            </AutoWindow>
+                            <AutoWindow namePath="__auto_thumb__" >
+                                <Property name="RestoreOldCapture" value="true" />
+                            </AutoWindow>
+                        </AutoWindow>
+                        <AutoWindow namePath="__auto_vscrollbar__" >
+                            <AutoWindow namePath="__auto_incbtn__" >
+                                <Property name="RestoreOldCapture" value="true" />
+                            </AutoWindow>
+                            <AutoWindow namePath="__auto_decbtn__" >
+                                <Property name="RestoreOldCapture" value="true" />
+                            </AutoWindow>
+                            <AutoWindow namePath="__auto_thumb__" >
+                                <Property name="RestoreOldCapture" value="true" />
+                            </AutoWindow>
+                        </AutoWindow>
+                    </AutoWindow>
+                </Window>
+                <Window type="TaharezLook/Label" name="lbl_crashSound" >
+                    <Property name="Area" value="{{0.5,0},{0.15,0},{1,-2},{0.28,-2}}" />
+                    <Property name="Text" value="Crash Sound" />
+                    <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                    <Property name="HorzFormatting" value="LeftAligned" />
+                </Window>
+                <Window type="TaharezLook/Combobox" name="cbx_crashSound" >
+                    <Property name="Area" value="{{0.5,0},{0.3,0},{1,-2},{0.7,-2}}" />
+                    <Property name="Text" value="None" />
+                    <AutoWindow namePath="__auto_editbox__" >
+                        <Property name="Text" value="None" />
+                        <Property name="ActiveSelectionColour" value="tl:FF6060FF tr:FF6060FF bl:FF6060FF br:FF6060FF" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_droplist__" >
+                        <AutoWindow namePath="__auto_hscrollbar__" >
+                            <AutoWindow namePath="__auto_incbtn__" >
+                                <Property name="RestoreOldCapture" value="true" />
+                            </AutoWindow>
+                            <AutoWindow namePath="__auto_decbtn__" >
+                                <Property name="RestoreOldCapture" value="true" />
+                            </AutoWindow>
+                            <AutoWindow namePath="__auto_thumb__" >
+                                <Property name="RestoreOldCapture" value="true" />
+                            </AutoWindow>
+                        </AutoWindow>
+                        <AutoWindow namePath="__auto_vscrollbar__" >
+                            <AutoWindow namePath="__auto_incbtn__" >
+                                <Property name="RestoreOldCapture" value="true" />
+                            </AutoWindow>
+                            <AutoWindow namePath="__auto_decbtn__" >
+                                <Property name="RestoreOldCapture" value="true" />
+                            </AutoWindow>
+                            <AutoWindow namePath="__auto_thumb__" >
+                                <Property name="RestoreOldCapture" value="true" />
+                            </AutoWindow>
+                        </AutoWindow>
+                    </AutoWindow>
+                </Window>
+            </Window>
+            <Window type="TaharezLook/GroupBox" name="gbx_selected" >
+                <Property name="Area" value="{{0.7,0},{0,5},{1,-5},{1,-5}}" />
+                <Property name="Text" value="Selected" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Window type="TaharezLook/RadioButton" name="rbt_this" >
+                    <Property name="Area" value="{{0,0},{0,0},{1,0},{0.13,-2}}" />
+                    <Property name="Text" value="This (coffer)" />
+                    <Property name="Selected" value="true" />
+                </Window>
+                <Window type="TaharezLook/RadioButton" name="rbt_entity" >
+                    <Property name="Area" value="{{0,0},{0.15,0},{1,0},{0.28,-2}}" />
+                    <Property name="Text" value="Entity" />
+                </Window>
+                <Window type="TaharezLook/Combobox" name="cbx_entitySelect" >
+                    <Property name="Area" value="{{0,1},{0.3,-1},{1,0},{1,0}}" />
+                    <Property name="Text" value="None" />
+                    <Property name="ReadOnly" value="true" />
+                    <AutoWindow namePath="__auto_editbox__" >
+                        <Property name="Text" value="None" />
+                        <Property name="ReadOnly" value="true" />
+                        <Property name="ActiveSelectionColour" value="tl:FF6060FF tr:FF6060FF bl:FF6060FF br:FF6060FF" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_droplist__" >
+                        <AutoWindow namePath="__auto_hscrollbar__" >
+                            <AutoWindow namePath="__auto_incbtn__" >
+                                <Property name="RestoreOldCapture" value="true" />
+                            </AutoWindow>
+                            <AutoWindow namePath="__auto_decbtn__" >
+                                <Property name="RestoreOldCapture" value="true" />
+                            </AutoWindow>
+                            <AutoWindow namePath="__auto_thumb__" >
+                                <Property name="RestoreOldCapture" value="true" />
+                            </AutoWindow>
+                        </AutoWindow>
+                        <AutoWindow namePath="__auto_vscrollbar__" >
+                            <AutoWindow namePath="__auto_incbtn__" >
+                                <Property name="RestoreOldCapture" value="true" />
+                            </AutoWindow>
+                            <AutoWindow namePath="__auto_decbtn__" >
+                                <Property name="RestoreOldCapture" value="true" />
+                            </AutoWindow>
+                            <AutoWindow namePath="__auto_thumb__" >
+                                <Property name="RestoreOldCapture" value="true" />
+                            </AutoWindow>
+                        </AutoWindow>
+                    </AutoWindow>
+                </Window>
+            </Window>
+        </Window>
+        <Window type="TaharezLook/TabContentPane" name="ctn_door" >
+            <Property name="Area" value="{{0,10},{0.4,5},{1,-10},{0.7,5}}" />
+            <Property name="Text" value="Door" />
+            <Property name="MaxSize" value="{{1,0},{1,0}}" />
+            <Window type="TaharezLook/GroupBox" name="gbx_members" >
+                <Property name="Area" value="{{0,5},{0,5},{0.5,-5},{1,-5}}" />
+                <Property name="Text" value="Members" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Window type="TaharezLook/Label" name="lbl_sound" >
+                    <Property name="Area" value="{{0,0},{0.15,0},{0.5,-2},{0.28,-2}}" />
+                    <Property name="Text" value="Open Sound" />
+                    <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                    <Property name="HorzFormatting" value="LeftAligned" />
+                </Window>
+                <Window type="TaharezLook/Combobox" name="cbx_sound" >
+                    <Property name="Area" value="{{0,0},{0.3,0},{0.5,-2},{0.8,-2}}" />
+                    <Property name="Text" value="None" />
+                    <AutoWindow namePath="__auto_editbox__" >
+                        <Property name="Text" value="None" />
+                        <Property name="ActiveSelectionColour" value="tl:FF6060FF tr:FF6060FF bl:FF6060FF br:FF6060FF" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_droplist__" >
+                        <AutoWindow namePath="__auto_hscrollbar__" >
+                            <AutoWindow namePath="__auto_incbtn__" >
+                                <Property name="RestoreOldCapture" value="true" />
+                            </AutoWindow>
+                            <AutoWindow namePath="__auto_decbtn__" >
+                                <Property name="RestoreOldCapture" value="true" />
+                            </AutoWindow>
+                            <AutoWindow namePath="__auto_thumb__" >
+                                <Property name="RestoreOldCapture" value="true" />
+                            </AutoWindow>
+                        </AutoWindow>
+                        <AutoWindow namePath="__auto_vscrollbar__" >
+                            <AutoWindow namePath="__auto_incbtn__" >
+                                <Property name="RestoreOldCapture" value="true" />
+                            </AutoWindow>
+                            <AutoWindow namePath="__auto_decbtn__" >
+                                <Property name="RestoreOldCapture" value="true" />
+                            </AutoWindow>
+                            <AutoWindow namePath="__auto_thumb__" >
+                                <Property name="RestoreOldCapture" value="true" />
+                            </AutoWindow>
+                        </AutoWindow>
+                    </AutoWindow>
+                </Window>
+                <Window type="TaharezLook/Checkbox" name="chb_opened" >
+                    <Property name="Area" value="{{0,0},{0,0},{0.5,-2},{0.13,0}}" />
+                    <Property name="Text" value="Opened" />
+                </Window>
+            </Window>
+        </Window>
+        <Window type="TaharezLook/TabContentPane" name="ctn_key" >
+            <Property name="Area" value="{{0,10},{0.4,5},{1,-10},{0.7,5}}" />
+            <Property name="Text" value="Key" />
+            <Property name="MaxSize" value="{{1,0},{1,0}}" />
+            <Window type="TaharezLook/GroupBox" name="gbx_members" >
+                <Property name="Area" value="{{0,5},{0,5},{0.5,-5},{1,-5}}" />
+                <Property name="Text" value="Members" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Window type="TaharezLook/Label" name="lbl_sound" >
+                    <Property name="Area" value="{{0,0},{0.15,0},{0.5,-2},{0.28,-2}}" />
+                    <Property name="Text" value="Pick Sound" />
+                    <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                    <Property name="HorzFormatting" value="LeftAligned" />
+                </Window>
+                <Window type="TaharezLook/Combobox" name="cbx_sound" >
+                    <Property name="Area" value="{{0,0},{0.3,0},{0.5,-2},{0.8,-2}}" />
+                    <Property name="Text" value="None" />
+                    <AutoWindow namePath="__auto_editbox__" >
+                        <Property name="Text" value="None" />
+                        <Property name="ActiveSelectionColour" value="tl:FF6060FF tr:FF6060FF bl:FF6060FF br:FF6060FF" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_droplist__" >
+                        <AutoWindow namePath="__auto_hscrollbar__" >
+                            <AutoWindow namePath="__auto_incbtn__" >
+                                <Property name="RestoreOldCapture" value="true" />
+                            </AutoWindow>
+                            <AutoWindow namePath="__auto_decbtn__" >
+                                <Property name="RestoreOldCapture" value="true" />
+                            </AutoWindow>
+                            <AutoWindow namePath="__auto_thumb__" >
+                                <Property name="RestoreOldCapture" value="true" />
+                            </AutoWindow>
+                        </AutoWindow>
+                        <AutoWindow namePath="__auto_vscrollbar__" >
+                            <AutoWindow namePath="__auto_incbtn__" >
+                                <Property name="RestoreOldCapture" value="true" />
+                            </AutoWindow>
+                            <AutoWindow namePath="__auto_decbtn__" >
+                                <Property name="RestoreOldCapture" value="true" />
+                            </AutoWindow>
+                            <AutoWindow namePath="__auto_thumb__" >
+                                <Property name="RestoreOldCapture" value="true" />
+                            </AutoWindow>
+                        </AutoWindow>
+                    </AutoWindow>
+                </Window>
+            </Window>
+        </Window>
+        <Window type="TaharezLook/TabContentPane" name="ctn_medicine" >
+            <Property name="Area" value="{{0,10},{0.4,5},{1,-10},{0.7,5}}" />
+            <Property name="Text" value="Medicine" />
+            <Property name="MaxSize" value="{{1,0},{1,0}}" />
+            <Window type="TaharezLook/GroupBox" name="gbx_members" >
+                <Property name="Area" value="{{0,5},{0,5},{0.5,-5},{1,-5}}" />
+                <Property name="Text" value="Members" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Window type="TaharezLook/Label" name="lbl_sound" >
+                    <Property name="Area" value="{{0,0},{0.15,0},{0.5,-2},{0.28,-2}}" />
+                    <Property name="Text" value="Use Sound" />
+                    <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                    <Property name="HorzFormatting" value="LeftAligned" />
+                </Window>
+                <Window type="TaharezLook/Combobox" name="cbx_sound" >
+                    <Property name="Area" value="{{0,0},{0.3,0},{0.5,-2},{0.8,-2}}" />
+                    <Property name="Text" value="None" />
+                    <AutoWindow namePath="__auto_editbox__" >
+                        <Property name="Text" value="None" />
+                        <Property name="ActiveSelectionColour" value="tl:FF6060FF tr:FF6060FF bl:FF6060FF br:FF6060FF" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_droplist__" >
+                        <AutoWindow namePath="__auto_hscrollbar__" >
+                            <AutoWindow namePath="__auto_incbtn__" >
+                                <Property name="RestoreOldCapture" value="true" />
+                            </AutoWindow>
+                            <AutoWindow namePath="__auto_decbtn__" >
+                                <Property name="RestoreOldCapture" value="true" />
+                            </AutoWindow>
+                            <AutoWindow namePath="__auto_thumb__" >
+                                <Property name="RestoreOldCapture" value="true" />
+                            </AutoWindow>
+                        </AutoWindow>
+                        <AutoWindow namePath="__auto_vscrollbar__" >
+                            <AutoWindow namePath="__auto_incbtn__" >
+                                <Property name="RestoreOldCapture" value="true" />
+                            </AutoWindow>
+                            <AutoWindow namePath="__auto_decbtn__" >
+                                <Property name="RestoreOldCapture" value="true" />
+                            </AutoWindow>
+                            <AutoWindow namePath="__auto_thumb__" >
+                                <Property name="RestoreOldCapture" value="true" />
+                            </AutoWindow>
+                        </AutoWindow>
+                    </AutoWindow>
+                </Window>
+                <Window type="TaharezLook/Spinner" name="spn_health" >
+                    <Property name="Area" value="{{0.25,0},{0,0},{0.5,-2},{0.13,0}}" />
+                    <Property name="Text" value="1" />
+                    <Property name="CurrentValue" value="1" />
+                    <Property name="MinimumValue" value="0" />
+                    <Property name="TextInputMode" value="FloatingPoint" />
+                    <AutoWindow namePath="__auto_editbox__" >
+                        <Property name="Text" value="1" />
+                        <Property name="ValidationString" value="-?\d*\.?\d*" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_incbtn__" >
+                        <Property name="WantsMultiClickEvents" value="false" />
+                        <Property name="MouseAutoRepeatEnabled" value="true" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_decbtn__" >
+                        <Property name="WantsMultiClickEvents" value="false" />
+                        <Property name="MouseAutoRepeatEnabled" value="true" />
+                    </AutoWindow>
+                </Window>
+                <Window type="TaharezLook/Label" name="lbl_health" >
+                    <Property name="Area" value="{{0,0},{0,0},{0.23,-2},{0.13,0}}" />
+                    <Property name="Text" value="Health" />
+                    <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                    <Property name="HorzFormatting" value="LeftAligned" />
+                </Window>
+            </Window>
+        </Window>
+        <Window type="TaharezLook/TabContentPane" name="ctn_gun" >
+            <Property name="Area" value="{{0,10},{0.4,5},{1,-10},{0.7,5}}" />
+            <Property name="Text" value="Gun" />
+            <Property name="MaxSize" value="{{1,0},{1,0}}" />
+            <Window type="TaharezLook/GroupBox" name="gbx_members" >
+                <Property name="Area" value="{{0,5},{0,5},{0.5,-5},{1,-5}}" />
+                <Property name="Text" value="Members" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Window type="TaharezLook/Label" name="lbl_sound" >
+                    <Property name="Area" value="{{0.5,0},{0,0},{1,-2},{0.13,-2}}" />
+                    <Property name="Text" value="Shoot Sound" />
+                    <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                    <Property name="HorzFormatting" value="LeftAligned" />
+                </Window>
+                <Window type="TaharezLook/Combobox" name="cbx_sound" >
+                    <Property name="Area" value="{{0.5,0},{0.15,0},{1,-2},{0.8,-2}}" />
+                    <Property name="Text" value="None" />
+                    <AutoWindow namePath="__auto_editbox__" >
+                        <Property name="Text" value="None" />
+                        <Property name="ActiveSelectionColour" value="tl:FF6060FF tr:FF6060FF bl:FF6060FF br:FF6060FF" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_droplist__" >
+                        <AutoWindow namePath="__auto_hscrollbar__" >
+                            <AutoWindow namePath="__auto_incbtn__" >
+                                <Property name="RestoreOldCapture" value="true" />
+                            </AutoWindow>
+                            <AutoWindow namePath="__auto_decbtn__" >
+                                <Property name="RestoreOldCapture" value="true" />
+                            </AutoWindow>
+                            <AutoWindow namePath="__auto_thumb__" >
+                                <Property name="RestoreOldCapture" value="true" />
+                            </AutoWindow>
+                        </AutoWindow>
+                        <AutoWindow namePath="__auto_vscrollbar__" >
+                            <AutoWindow namePath="__auto_incbtn__" >
+                                <Property name="RestoreOldCapture" value="true" />
+                            </AutoWindow>
+                            <AutoWindow namePath="__auto_decbtn__" >
+                                <Property name="RestoreOldCapture" value="true" />
+                            </AutoWindow>
+                            <AutoWindow namePath="__auto_thumb__" >
+                                <Property name="RestoreOldCapture" value="true" />
+                            </AutoWindow>
+                        </AutoWindow>
+                    </AutoWindow>
+                </Window>
+                <Window type="TaharezLook/Spinner" name="spn_rate" >
+                    <Property name="Area" value="{{0.25,0},{0,0},{0.5,-2},{0.13,0}}" />
+                    <Property name="Text" value="1" />
+                    <Property name="CurrentValue" value="1" />
+                    <Property name="MinimumValue" value="0" />
+                    <Property name="TextInputMode" value="FloatingPoint" />
+                    <AutoWindow namePath="__auto_editbox__" >
+                        <Property name="Text" value="1" />
+                        <Property name="ValidationString" value="-?\d*\.?\d*" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_incbtn__" >
+                        <Property name="WantsMultiClickEvents" value="false" />
+                        <Property name="MouseAutoRepeatEnabled" value="true" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_decbtn__" >
+                        <Property name="WantsMultiClickEvents" value="false" />
+                        <Property name="MouseAutoRepeatEnabled" value="true" />
+                    </AutoWindow>
+                </Window>
+                <Window type="TaharezLook/Label" name="lbl_rate" >
+                    <Property name="Area" value="{{0,0},{0,0},{0.23,-2},{0.13,0}}" />
+                    <Property name="Text" value="Rate" />
+                    <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                    <Property name="HorzFormatting" value="LeftAligned" />
+                </Window>
+                <Window type="TaharezLook/Spinner" name="spn_spread" >
+                    <Property name="Area" value="{{0.25,1},{0.15,0},{0.5,-1},{0.28,0}}" />
+                    <Property name="Text" value="1" />
+                    <Property name="CurrentValue" value="1" />
+                    <Property name="MinimumValue" value="0" />
+                    <Property name="TextInputMode" value="FloatingPoint" />
+                    <AutoWindow namePath="__auto_editbox__" >
+                        <Property name="Text" value="1" />
+                        <Property name="ValidationString" value="-?\d*\.?\d*" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_incbtn__" >
+                        <Property name="WantsMultiClickEvents" value="false" />
+                        <Property name="MouseAutoRepeatEnabled" value="true" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_decbtn__" >
+                        <Property name="WantsMultiClickEvents" value="false" />
+                        <Property name="MouseAutoRepeatEnabled" value="true" />
+                    </AutoWindow>
+                </Window>
+                <Window type="TaharezLook/Label" name="lbl_spread" >
+                    <Property name="Area" value="{{0,1},{0.15,0},{0.23,-1},{0.28,0}}" />
+                    <Property name="Text" value="Spread" />
+                    <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                    <Property name="HorzFormatting" value="LeftAligned" />
+                </Window>
+                <Window type="TaharezLook/Spinner" name="spn_speed" >
+                    <Property name="Area" value="{{0.25,1},{0.3,0},{0.5,-1},{0.43,0}}" />
+                    <Property name="Text" value="1" />
+                    <Property name="CurrentValue" value="1" />
+                    <Property name="MinimumValue" value="0" />
+                    <Property name="TextInputMode" value="FloatingPoint" />
+                    <AutoWindow namePath="__auto_editbox__" >
+                        <Property name="Text" value="1" />
+                        <Property name="ValidationString" value="-?\d*\.?\d*" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_incbtn__" >
+                        <Property name="WantsMultiClickEvents" value="false" />
+                        <Property name="MouseAutoRepeatEnabled" value="true" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_decbtn__" >
+                        <Property name="WantsMultiClickEvents" value="false" />
+                        <Property name="MouseAutoRepeatEnabled" value="true" />
+                    </AutoWindow>
+                </Window>
+                <Window type="TaharezLook/Label" name="lbl_speed" >
+                    <Property name="Area" value="{{0,1},{0.3,0},{0.23,-1},{0.43,0}}" />
+                    <Property name="Text" value="Speed" />
+                    <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                    <Property name="HorzFormatting" value="LeftAligned" />
+                </Window>
+                <Window type="TaharezLook/Spinner" name="spn_bps" >
+                    <Property name="Area" value="{{0.25,1},{0.45,0},{0.5,-1},{0.58,0}}" />
+                    <Property name="Text" value="1" />
+                    <Property name="CurrentValue" value="1" />
+                    <Property name="MinimumValue" value="0" />
+                    <AutoWindow namePath="__auto_editbox__" >
+                        <Property name="Text" value="1" />
+                        <Property name="ValidationString" value="-?\d*" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_incbtn__" >
+                        <Property name="WantsMultiClickEvents" value="false" />
+                        <Property name="MouseAutoRepeatEnabled" value="true" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_decbtn__" >
+                        <Property name="WantsMultiClickEvents" value="false" />
+                        <Property name="MouseAutoRepeatEnabled" value="true" />
+                    </AutoWindow>
+                </Window>
+                <Window type="TaharezLook/Label" name="lbl_bps" >
+                    <Property name="Area" value="{{0,1},{0.45,0},{0.23,-1},{0.58,0}}" />
+                    <Property name="Text" value="B.P.S" />
+                    <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                    <Property name="HorzFormatting" value="LeftAligned" />
+                </Window>
+                <Window type="TaharezLook/Spinner" name="spn_damage" >
+                    <Property name="Area" value="{{0.25,2},{0.6,0},{0.5,-1},{0.73,0}}" />
+                    <Property name="Text" value="1" />
+                    <Property name="CurrentValue" value="1" />
+                    <Property name="MinimumValue" value="0" />
+                    <Property name="TextInputMode" value="FloatingPoint" />
+                    <AutoWindow namePath="__auto_editbox__" >
+                        <Property name="Text" value="1" />
+                        <Property name="ValidationString" value="-?\d*\.?\d*" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_incbtn__" >
+                        <Property name="WantsMultiClickEvents" value="false" />
+                        <Property name="MouseAutoRepeatEnabled" value="true" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_decbtn__" >
+                        <Property name="WantsMultiClickEvents" value="false" />
+                        <Property name="MouseAutoRepeatEnabled" value="true" />
+                    </AutoWindow>
+                </Window>
+                <Window type="TaharezLook/Label" name="lbl_damage" >
+                    <Property name="Area" value="{{0,1},{0.6,0},{0.26,-1},{0.73,0}}" />
+                    <Property name="Text" value="Damage" />
+                    <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                    <Property name="HorzFormatting" value="LeftAligned" />
+                </Window>
+                <Window type="TaharezLook/Spinner" name="spn_bulletWidth" >
+                    <Property name="Area" value="{{0.25,2},{0.75,0},{0.5,-1},{0.88,0}}" />
+                    <Property name="Text" value="1" />
+                    <Property name="CurrentValue" value="1" />
+                    <Property name="MinimumValue" value="0" />
+                    <Property name="TextInputMode" value="FloatingPoint" />
+                    <AutoWindow namePath="__auto_editbox__" >
+                        <Property name="Text" value="1" />
+                        <Property name="ValidationString" value="-?\d*\.?\d*" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_incbtn__" >
+                        <Property name="WantsMultiClickEvents" value="false" />
+                        <Property name="MouseAutoRepeatEnabled" value="true" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_decbtn__" >
+                        <Property name="WantsMultiClickEvents" value="false" />
+                        <Property name="MouseAutoRepeatEnabled" value="true" />
+                    </AutoWindow>
+                </Window>
+                <Window type="TaharezLook/Label" name="lbl_bulletWidth" >
+                    <Property name="Area" value="{{0,1},{0.75,0},{0.26,-1},{0.88,0}}" />
+                    <Property name="Text" value="B.Width" />
+                    <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                    <Property name="HorzFormatting" value="LeftAligned" />
+                </Window>
+            </Window>
+        </Window>
+        <Window type="TaharezLook/TabContentPane" name="ctn_tile" >
+            <Property name="Area" value="{{0,10},{0.4,5},{1,-10},{0.7,5}}" />
+            <Property name="Text" value="Tile" />
+            <Property name="MaxSize" value="{{1,0},{1,0}}" />
+            <Window type="TaharezLook/GroupBox" name="gbx_members" >
+                <Property name="Area" value="{{0,5},{0,5},{0.5,-5},{1,-5}}" />
+                <Property name="Text" value="Members" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Window type="TaharezLook/Checkbox" name="chb_opened" >
+                    <Property name="Area" value="{{0,0},{0,0},{0.5,-2},{0.13,0}}" />
+                    <Property name="Text" value="Crossable" />
+                    <Property name="Selected" value="true" />
+                </Window>
+                <Window type="TaharezLook/Spinner" name="spn_posY" >
+                    <Property name="Area" value="{{0.25,1},{0.3,0},{0.5,-1},{0.43,0}}" />
+                    <Property name="Text" value="1" />
+                    <Property name="CurrentValue" value="1" />
+                    <Property name="MinimumValue" value="0" />
+                    <AutoWindow namePath="__auto_editbox__" >
+                        <Property name="Text" value="1" />
+                        <Property name="ValidationString" value="-?\d*" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_incbtn__" >
+                        <Property name="WantsMultiClickEvents" value="false" />
+                        <Property name="MouseAutoRepeatEnabled" value="true" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_decbtn__" >
+                        <Property name="WantsMultiClickEvents" value="false" />
+                        <Property name="MouseAutoRepeatEnabled" value="true" />
+                    </AutoWindow>
+                </Window>
+                <Window type="TaharezLook/Label" name="lbl_posY" >
+                    <Property name="Area" value="{{0,1},{0.3,0},{0.23,-1},{0.43,0}}" />
+                    <Property name="Text" value="Pos.y" />
+                    <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                    <Property name="HorzFormatting" value="LeftAligned" />
+                </Window>
+                <Window type="TaharezLook/Spinner" name="spn_posX" >
+                    <Property name="Area" value="{{0.25,1},{0.15,0},{0.5,-1},{0.28,0}}" />
+                    <Property name="Text" value="1" />
+                    <Property name="CurrentValue" value="1" />
+                    <Property name="MinimumValue" value="0" />
+                    <AutoWindow namePath="__auto_editbox__" >
+                        <Property name="Text" value="1" />
+                        <Property name="ValidationString" value="-?\d*" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_incbtn__" >
+                        <Property name="WantsMultiClickEvents" value="false" />
+                        <Property name="MouseAutoRepeatEnabled" value="true" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_decbtn__" >
+                        <Property name="WantsMultiClickEvents" value="false" />
+                        <Property name="MouseAutoRepeatEnabled" value="true" />
+                    </AutoWindow>
+                </Window>
+                <Window type="TaharezLook/Label" name="lbl_posX" >
+                    <Property name="Area" value="{{0,1},{0.15,0},{0.23,-1},{0.28,0}}" />
+                    <Property name="Text" value="Pos.x" />
+                    <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                    <Property name="HorzFormatting" value="LeftAligned" />
+                </Window>
+            </Window>
+        </Window>
+        <Window type="TaharezLook/TabContentPane" name="ctn_light" >
+            <Property name="Area" value="{{0,10},{0.4,5},{1,-10},{0.7,5}}" />
+            <Property name="Text" value="Light" />
+            <Property name="MaxSize" value="{{1,0},{1,0}}" />
+            <Window type="TaharezLook/GroupBox" name="gbx_members" >
+                <Property name="Area" value="{{0,5},{0,5},{0.5,-5},{1,-5}}" />
+                <Property name="Text" value="Members" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Window type="TaharezLook/RadioButton" name="rbt_spotLight" >
+                    <Property name="Area" value="{{0,0},{0.15,0},{0.5,-2},{0.28,0}}" />
+                    <Property name="Text" value="Spot Light" />
+                </Window>
+                <Window type="TaharezLook/RadioButton" name="rbt_pointLight" >
+                    <Property name="Area" value="{{0,0},{0,0},{0.5,-2},{0.13,0}}" />
+                    <Property name="Text" value="Point Light" />
+                    <Property name="Selected" value="true" />
+                </Window>
+                <Window type="TaharezLook/Checkbox" name="chb_on" >
+                    <Property name="Area" value="{{0,0},{0.3,0},{0.5,-2},{0.43,0}}" />
+                    <Property name="Text" value="On / Off" />
+                    <Property name="Selected" value="true" />
+                </Window>
+                <Window type="TaharezLook/Checkbox" name="chb_broken" >
+                    <Property name="Area" value="{{0,0},{0.45,0},{0.5,-2},{0.58,0}}" />
+                    <Property name="Text" value="Broken down" />
+                </Window>
+                <Window type="TaharezLook/Label" name="lbl_percent" >
+                    <Property name="Area" value="{{0,0},{0.6,0},{0.25,-2},{0.73,0}}" />
+                    <Property name="Text" value="Percent" />
+                    <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                    <Property name="TooltipText" value="Broken down percentage" />
+                    <Property name="HorzFormatting" value="LeftAligned" />
+                </Window>
+                <Window type="TaharezLook/Spinner" name="spn_percent" >
+                    <Property name="Area" value="{{0.25,0},{0.6,0},{0.5,-2},{0.73,0}}" />
+                    <Property name="Text" value="0" />
+                    <Property name="MaximumValue" value="100" />
+                    <Property name="MinimumValue" value="0" />
+                    <AutoWindow namePath="__auto_editbox__" >
+                        <Property name="Text" value="0" />
+                        <Property name="ValidationString" value="-?\d*" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_incbtn__" >
+                        <Property name="WantsMultiClickEvents" value="false" />
+                        <Property name="MouseAutoRepeatEnabled" value="true" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_decbtn__" >
+                        <Property name="WantsMultiClickEvents" value="false" />
+                        <Property name="MouseAutoRepeatEnabled" value="true" />
+                    </AutoWindow>
+                </Window>
+                <Window type="TaharezLook/Combobox" name="cbx_sound" >
+                    <Property name="Area" value="{{0.5,0},{0.15,0},{1,-2},{0.8,-2}}" />
+                    <Property name="Text" value="None" />
+                    <AutoWindow namePath="__auto_editbox__" >
+                        <Property name="Text" value="None" />
+                        <Property name="ActiveSelectionColour" value="tl:FF6060FF tr:FF6060FF bl:FF6060FF br:FF6060FF" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_droplist__" >
+                        <AutoWindow namePath="__auto_hscrollbar__" >
+                            <AutoWindow namePath="__auto_incbtn__" >
+                                <Property name="RestoreOldCapture" value="true" />
+                            </AutoWindow>
+                            <AutoWindow namePath="__auto_decbtn__" >
+                                <Property name="RestoreOldCapture" value="true" />
+                            </AutoWindow>
+                            <AutoWindow namePath="__auto_thumb__" >
+                                <Property name="RestoreOldCapture" value="true" />
+                            </AutoWindow>
+                        </AutoWindow>
+                        <AutoWindow namePath="__auto_vscrollbar__" >
+                            <AutoWindow namePath="__auto_incbtn__" >
+                                <Property name="RestoreOldCapture" value="true" />
+                            </AutoWindow>
+                            <AutoWindow namePath="__auto_decbtn__" >
+                                <Property name="RestoreOldCapture" value="true" />
+                            </AutoWindow>
+                            <AutoWindow namePath="__auto_thumb__" >
+                                <Property name="RestoreOldCapture" value="true" />
+                            </AutoWindow>
+                        </AutoWindow>
+                    </AutoWindow>
+                </Window>
+                <Window type="TaharezLook/Label" name="lbl_sound" >
+                    <Property name="Area" value="{{0.5,0},{0,0},{1,-2},{0.13,-2}}" />
+                    <Property name="Text" value="Broken Sound" />
+                    <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                    <Property name="HorzFormatting" value="LeftAligned" />
+                </Window>
+            </Window>
+        </Window>
+        <Window type="TaharezLook/TabContentPane" name="ctn_level" >
+            <Property name="Area" value="{{0,10},{0.4,5},{1,-10},{0.7,5}}" />
+            <Property name="Text" value="Level" />
+            <Property name="MaxSize" value="{{1,0},{1,0}}" />
+            <Window type="TaharezLook/GroupBox" name="gbx_members" >
+                <Property name="Area" value="{{0,5},{0,5},{0.5,-5},{1,-5}}" />
+                <Property name="Text" value="Members" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Window type="TaharezLook/Label" name="lbl_music" >
+                    <Property name="Area" value="{{0.5,0},{0,0},{1,-2},{0.13,-2}}" />
+                    <Property name="Text" value="Music" />
+                    <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                    <Property name="HorzFormatting" value="LeftAligned" />
+                </Window>
+                <Window type="TaharezLook/Combobox" name="cbx_music" >
+                    <Property name="Area" value="{{0.5,0},{0.15,0},{1,-2},{0.8,-2}}" />
+                    <Property name="Text" value="None" />
+                    <AutoWindow namePath="__auto_editbox__" >
+                        <Property name="Text" value="None" />
+                        <Property name="ActiveSelectionColour" value="tl:FF6060FF tr:FF6060FF bl:FF6060FF br:FF6060FF" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_droplist__" >
+                        <AutoWindow namePath="__auto_hscrollbar__" >
+                            <AutoWindow namePath="__auto_incbtn__" >
+                                <Property name="RestoreOldCapture" value="true" />
+                            </AutoWindow>
+                            <AutoWindow namePath="__auto_decbtn__" >
+                                <Property name="RestoreOldCapture" value="true" />
+                            </AutoWindow>
+                            <AutoWindow namePath="__auto_thumb__" >
+                                <Property name="RestoreOldCapture" value="true" />
+                            </AutoWindow>
+                        </AutoWindow>
+                        <AutoWindow namePath="__auto_vscrollbar__" >
+                            <AutoWindow namePath="__auto_incbtn__" >
+                                <Property name="RestoreOldCapture" value="true" />
+                            </AutoWindow>
+                            <AutoWindow namePath="__auto_decbtn__" >
+                                <Property name="RestoreOldCapture" value="true" />
+                            </AutoWindow>
+                            <AutoWindow namePath="__auto_thumb__" >
+                                <Property name="RestoreOldCapture" value="true" />
+                            </AutoWindow>
+                        </AutoWindow>
+                    </AutoWindow>
+                </Window>
+                <Window type="TaharezLook/Spinner" name="spn_width" >
+                    <Property name="Area" value="{{0.25,0},{0,0},{0.5,-2},{0.13,0}}" />
+                    <Property name="Text" value="1" />
+                    <Property name="CurrentValue" value="1" />
+                    <Property name="MinimumValue" value="0" />
+                    <AutoWindow namePath="__auto_editbox__" >
+                        <Property name="Text" value="1" />
+                        <Property name="ValidationString" value="-?\d*" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_incbtn__" >
+                        <Property name="WantsMultiClickEvents" value="false" />
+                        <Property name="MouseAutoRepeatEnabled" value="true" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_decbtn__" >
+                        <Property name="WantsMultiClickEvents" value="false" />
+                        <Property name="MouseAutoRepeatEnabled" value="true" />
+                    </AutoWindow>
+                </Window>
+                <Window type="TaharezLook/Label" name="lbl_width" >
+                    <Property name="Area" value="{{0,0},{0,0},{0.23,-2},{0.13,0}}" />
+                    <Property name="Text" value="Width" />
+                    <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                    <Property name="HorzFormatting" value="LeftAligned" />
+                </Window>
+                <Window type="TaharezLook/Spinner" name="spn_height" >
+                    <Property name="Area" value="{{0.25,1},{0.15,0},{0.5,-1},{0.28,0}}" />
+                    <Property name="Text" value="1" />
+                    <Property name="CurrentValue" value="1" />
+                    <Property name="MinimumValue" value="0" />
+                    <AutoWindow namePath="__auto_editbox__" >
+                        <Property name="Text" value="1" />
+                        <Property name="ValidationString" value="-?\d*" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_incbtn__" >
+                        <Property name="WantsMultiClickEvents" value="false" />
+                        <Property name="MouseAutoRepeatEnabled" value="true" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_decbtn__" >
+                        <Property name="WantsMultiClickEvents" value="false" />
+                        <Property name="MouseAutoRepeatEnabled" value="true" />
+                    </AutoWindow>
+                </Window>
+                <Window type="TaharezLook/Label" name="lbl_height" >
+                    <Property name="Area" value="{{0,1},{0.15,0},{0.23,-1},{0.28,0}}" />
+                    <Property name="Text" value="Height" />
+                    <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                    <Property name="HorzFormatting" value="LeftAligned" />
+                </Window>
+                <Window type="TaharezLook/Spinner" name="spn_tileSize" >
+                    <Property name="Area" value="{{0.25,1},{0.3,0},{0.5,-1},{0.43,0}}" />
+                    <Property name="Text" value="1" />
+                    <Property name="CurrentValue" value="1" />
+                    <Property name="MinimumValue" value="0" />
+                    <Property name="TextInputMode" value="FloatingPoint" />
+                    <AutoWindow namePath="__auto_editbox__" >
+                        <Property name="Text" value="1" />
+                        <Property name="ValidationString" value="-?\d*\.?\d*" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_incbtn__" >
+                        <Property name="WantsMultiClickEvents" value="false" />
+                        <Property name="MouseAutoRepeatEnabled" value="true" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_decbtn__" >
+                        <Property name="WantsMultiClickEvents" value="false" />
+                        <Property name="MouseAutoRepeatEnabled" value="true" />
+                    </AutoWindow>
+                </Window>
+                <Window type="TaharezLook/Label" name="lbl_tileSize" >
+                    <Property name="Area" value="{{0,1},{0.3,0},{0.23,-1},{0.43,0}}" />
+                    <Property name="Text" value="T.Size" />
+                    <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                    <Property name="TooltipText" value="Tile Size" />
+                    <Property name="HorzFormatting" value="LeftAligned" />
+                </Window>
+                <Window type="TaharezLook/Spinner" name="spn_cellSize" >
+                    <Property name="Area" value="{{0.25,2},{0.45,0},{0.5,0},{0.58,0}}" />
+                    <Property name="Text" value="1" />
+                    <Property name="CurrentValue" value="1" />
+                    <Property name="MinimumValue" value="0" />
+                    <AutoWindow namePath="__auto_editbox__" >
+                        <Property name="Text" value="1" />
+                        <Property name="ValidationString" value="-?\d*" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_incbtn__" >
+                        <Property name="WantsMultiClickEvents" value="false" />
+                        <Property name="MouseAutoRepeatEnabled" value="true" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_decbtn__" >
+                        <Property name="WantsMultiClickEvents" value="false" />
+                        <Property name="MouseAutoRepeatEnabled" value="true" />
+                    </AutoWindow>
+                </Window>
+                <Window type="TaharezLook/Label" name="lbl_cellSize" >
+                    <Property name="Area" value="{{0,1},{0.45,0},{0.23,-1},{0.58,0}}" />
+                    <Property name="Text" value="C.Size" />
+                    <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                    <Property name="HorzFormatting" value="LeftAligned" />
+                </Window>
+            </Window>
+            <Window type="TaharezLook/GroupBox" name="gbx_selected" >
+                <Property name="Area" value="{{0.5,5},{0,5},{1,-5},{1,-5}}" />
+                <Property name="Text" value="Selected" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Window type="TaharezLook/RadioButton" name="rbt_this" >
+                    <Property name="Area" value="{{0,0},{0,0},{0.5,-5},{0.13,-2}}" />
+                    <Property name="Text" value="This (level)" />
+                    <Property name="Selected" value="true" />
+                </Window>
+                <Window type="TaharezLook/RadioButton" name="rbt_mapNode" >
+                    <Property name="Area" value="{{0,0},{0.15,0},{0.5,-5},{0.28,-2}}" />
+                    <Property name="Text" value="Map node" />
+                </Window>
+                <Window type="TaharezLook/RadioButton" name="rbt_centerNode" >
+                    <Property name="Area" value="{{0,0},{0.3,0},{0.5,-5},{0.43,-2}}" />
+                    <Property name="Text" value="Center node" />
+                </Window>
+                <Window type="TaharezLook/RadioButton" name="rbt_neighbors" >
+                    <Property name="Area" value="{{0,0},{0.45,0},{0.5,-5},{0.58,-2}}" />
+                    <Property name="Text" value="Neighbors" />
+                    <Property name="TooltipText" value="Neighbor node" />
+                </Window>
+            </Window>
+        </Window>
+        <Window type="TaharezLook/TabContentPane" name="ctn_node" >
+            <Property name="Area" value="{{0,10},{0.4,5},{1,-10},{0.7,5}}" />
+            <Property name="Text" value="Level" />
+            <Property name="MaxSize" value="{{1,0},{1,0}}" />
+            <Window type="TaharezLook/GroupBox" name="gbx_members" >
+                <Property name="Area" value="{{0,5},{0,5},{0.5,-5},{1,-5}}" />
+                <Property name="Text" value="Members" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Window type="TaharezLook/Spinner" name="spn_width" >
+                    <Property name="Area" value="{{0.5,0},{0,0},{1,-1},{0.13,0}}" />
+                    <Property name="Text" value="1" />
+                    <Property name="CurrentValue" value="1" />
+                    <Property name="MinimumValue" value="0" />
+                    <AutoWindow namePath="__auto_editbox__" >
+                        <Property name="Text" value="1" />
+                        <Property name="ValidationString" value="-?\d*" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_incbtn__" >
+                        <Property name="WantsMultiClickEvents" value="false" />
+                        <Property name="MouseAutoRepeatEnabled" value="true" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_decbtn__" >
+                        <Property name="WantsMultiClickEvents" value="false" />
+                        <Property name="MouseAutoRepeatEnabled" value="true" />
+                    </AutoWindow>
+                </Window>
+                <Window type="TaharezLook/Label" name="lbl_width" >
+                    <Property name="Area" value="{{0,0},{0,0},{0.5,0},{0.13,0}}" />
+                    <Property name="Text" value="Width" />
+                    <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                    <Property name="HorzFormatting" value="LeftAligned" />
+                </Window>
+                <Window type="TaharezLook/Spinner" name="spn_height" >
+                    <Property name="Area" value="{{0.5,1},{0.15,0},{1,-1},{0.28,0}}" />
+                    <Property name="Text" value="1" />
+                    <Property name="CurrentValue" value="1" />
+                    <Property name="MinimumValue" value="0" />
+                    <AutoWindow namePath="__auto_editbox__" >
+                        <Property name="Text" value="1" />
+                        <Property name="ValidationString" value="-?\d*" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_incbtn__" >
+                        <Property name="WantsMultiClickEvents" value="false" />
+                        <Property name="MouseAutoRepeatEnabled" value="true" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_decbtn__" >
+                        <Property name="WantsMultiClickEvents" value="false" />
+                        <Property name="MouseAutoRepeatEnabled" value="true" />
+                    </AutoWindow>
+                </Window>
+                <Window type="TaharezLook/Label" name="lbl_height" >
+                    <Property name="Area" value="{{0,1},{0.15,0},{0.5,-1},{0.28,0}}" />
+                    <Property name="Text" value="Height" />
+                    <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                    <Property name="HorzFormatting" value="LeftAligned" />
+                </Window>
+            </Window>
+            <Window type="TaharezLook/GroupBox" name="gbx_selected" >
+                <Property name="Area" value="{{0.5,5},{0,5},{1,-5},{1,-5}}" />
+                <Property name="Text" value="Selected" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Window type="TaharezLook/RadioButton" name="rbt_this" >
+                    <Property name="Area" value="{{0,0},{0,0},{0.5,-5},{0.13,-2}}" />
+                    <Property name="Text" value="This (node)" />
+                    <Property name="Selected" value="true" />
+                </Window>
+                <Window type="TaharezLook/RadioButton" name="rbt_center" >
+                    <Property name="Area" value="{{0,0},{0.15,0},{0.5,-5},{0.28,-2}}" />
+                    <Property name="Text" value="Center" />
+                </Window>
+                <Window type="TaharezLook/RadioButton" name="rbt_edge" >
+                    <Property name="Area" value="{{0,0},{0.3,0},{0.5,-5},{0.43,-2}}" />
+                    <Property name="Text" value="Edge" />
+                </Window>
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

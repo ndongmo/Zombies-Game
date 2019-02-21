@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<GUILayout version="4" >
+    <Window type="DefaultWindow" name="wnd_zombie" >
+        <Property name="Area" value="{{0,0},{0,0},{1,0},{1,0}}" />
+        <Property name="Text" value="Zombie" />
+        <Property name="MaxSize" value="{{1,0},{1,0}}" />
+        <Window type="TaharezLook/GroupBox" name="gbx_members" >
+            <Property name="Area" value="{{0,5},{0,5},{0.5,-5},{1,-5}}" />
+            <Property name="Text" value="Members" />
+            <Property name="MaxSize" value="{{1,0},{1,0}}" />
+            <Window type="TaharezLook/Label" name="lbl_speed" >
+                <Property name="Area" value="{{0,0},{0,0},{0.5,-2},{0.13,-2}}" />
+                <Property name="Text" value="Speed" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Property name="HorzFormatting" value="LeftAligned" />
+            </Window>
+            <Window type="TaharezLook/Spinner" name="spn_speed" >
+                <Property name="Area" value="{{0.5,0},{0,0},{1,0},{0.13,0}}" />
+                <Property name="Text" value="1" />
+                <Property name="CurrentValue" value="1" />
+                <Property name="MinimumValue" value="0" />
+                <Property name="TextInputMode" value="FloatingPoint" />
+                <AutoWindow namePath="__auto_editbox__" >
+                    <Property name="Text" value="1" />
+                    <Property name="ValidationString" value="-?\d*\.?\d*" />
+                </AutoWindow>
+                <AutoWindow namePath="__auto_incbtn__" >
+                    <Property name="WantsMultiClickEvents" value="false" />
+                    <Property name="MouseAutoRepeatEnabled" value="true" />
+                </AutoWindow>
+                <AutoWindow namePath="__auto_decbtn__" >
+                    <Property name="WantsMultiClickEvents" value="false" />
+                    <Property name="MouseAutoRepeatEnabled" value="true" />
+                </AutoWindow>
+            </Window>
+            <Window type="TaharezLook/Spinner" name="spn_health" >
+                <Property name="Area" value="{{0.5,0},{0.3,0},{1,0},{0.43,0}}" />
+                <Property name="Text" value="1" />
+                <Property name="CurrentValue" value="1" />
+                <Property name="MinimumValue" value="0" />
+                <Property name="TextInputMode" value="FloatingPoint" />
+                <AutoWindow namePath="__auto_editbox__" >
+                    <Property name="Text" value="1" />
+                    <Property name="ValidationString" value="-?\d*\.?\d*" />
+                </AutoWindow>
+                <AutoWindow namePath="__auto_incbtn__" >
+                    <Property name="WantsMultiClickEvents" value="false" />
+                    <Property name="MouseAutoRepeatEnabled" value="true" />
+                </AutoWindow>
+                <AutoWindow namePath="__auto_decbtn__" >
+                    <Property name="WantsMultiClickEvents" value="false" />
+                    <Property name="MouseAutoRepeatEnabled" value="true" />
+                </AutoWindow>
+            </Window>
+            <Window type="TaharezLook/Label" name="lbl_health" >
+                <Property name="Area" value="{{0,0},{0.3,0},{0.5,0},{0.43,0}}" />
+                <Property name="Text" value="Health" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Property name="HorzFormatting" value="LeftAligned" />
+            </Window>
+            <Window type="TaharezLook/Label" name="lbl_damage" >
+                <Property name="Area" value="{{0,0},{0.15,-1},{0.5,-2},{0.28,-3}}" />
+                <Property name="Text" value="Damage" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Property name="HorzFormatting" value="LeftAligned" />
+            </Window>
+            <Window type="TaharezLook/Spinner" name="spn_damage" >
+                <Property name="Area" value="{{0.5,0},{0.15,0},{1,-2},{0.28,-2}}" />
+                <Property name="Text" value="1" />
+                <Property name="CurrentValue" value="1" />
+                <Property name="MinimumValue" value="0" />
+                <Property name="TextInputMode" value="FloatingPoint" />
+                <AutoWindow namePath="__auto_editbox__" >
+                    <Property name="Text" value="1" />
+                    <Property name="ValidationString" value="-?\d*\.?\d*" />
+                </AutoWindow>
+                <AutoWindow namePath="__auto_incbtn__" >
+                    <Property name="WantsMultiClickEvents" value="false" />
+                    <Property name="MouseAutoRepeatEnabled" value="true" />
+                </AutoWindow>
+                <AutoWindow namePath="__auto_decbtn__" >
+                    <Property name="WantsMultiClickEvents" value="false" />
+                    <Property name="MouseAutoRepeatEnabled" value="true" />
+                </AutoWindow>
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

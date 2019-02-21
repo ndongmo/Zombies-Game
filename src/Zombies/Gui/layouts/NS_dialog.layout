@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<GUILayout version="4" >
+    <Window type="TaharezLook/FrameWindow" name="wnd_dialog" >
+        <Property name="Area" value="{{0,0},{0,1},{0.25,0},{0.3,0}}" />
+        <Property name="Text" value="Dialog Box" />
+        <Property name="AlwaysOnTop" value="true" />
+        <Property name="SizingEnabled" value="false" />
+        <Property name="DragMovingEnabled" value="false" />
+        <Property name="CloseButtonEnabled" value="false" />
+        <AutoWindow namePath="__auto_titlebar__" >
+            <Property name="DraggingEnabled" value="false" />
+        </AutoWindow>
+        <Window type="TaharezLook/Button" name="btn_ok" >
+            <Property name="Area" value="{{0.2,0},{0.8,0},{0.5,-5},{1,-5}}" />
+            <Property name="Text" value="OK" />
+        </Window>
+        <Window type="TaharezLook/Button" name="btn_cancel" >
+            <Property name="Area" value="{{0.5,5},{0.8,0},{0.8,0},{1,-5}}" />
+            <Property name="Text" value="Cancel" />
+        </Window>
+        <Window type="TaharezLook/StaticText" name="txt_msg" >
+            <Property name="Area" value="{{0,6},{0,0},{1,-4},{0.3,0}}" />
+            <Property name="MaxSize" value="{{1,0},{1,0}}" />
+            <Property name="HorzFormatting" value="WordWrapLeftAligned" />
+            <Property name="VertFormatting" value="TopAligned" />
+            <Property name="BackgroundEnabled" value="false" />
+            <Property name="HorzScrollPageSize" value="288" />
+            <Property name="VertScrollPageSize" value="46" />
+        </Window>
+    </Window>
+</GUILayout>

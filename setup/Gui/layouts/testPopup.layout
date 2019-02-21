@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<GUILayout version="4" >
+    <Window type="TaharezLook/FrameWindow" name="FrameWindow" >
+        <Property name="Area" value="{{0,0},{0,0},{0.3,0},{0.3,0}}" />
+        <Property name="FrameEnabled" value="false" />
+        <Property name="RollUpEnabled" value="false" />
+        <Property name="SizingEnabled" value="false" />
+        <Property name="ClientAreaColour" value="tl:FF141B00 tr:FF141B38 bl:FF141B38 br:FF141B38" />
+        <Property name="DragMovingEnabled" value="false" />
+        <Property name="CloseButtonEnabled" value="false" />
+        <Property name="SizingBorderThickness" value="0" />
+        <AutoWindow namePath="__auto_titlebar__" >
+            <Property name="DraggingEnabled" value="false" />
+        </AutoWindow>
+        <Window type="TaharezLook/StaticImage" name="StaticImage" >
+            <Property name="Area" value="{{0,0},{0,1},{0,128},{0,129}}" />
+            <Property name="MaxSize" value="{{1,0},{1,0}}" />
+            <Property name="FrameColours" value="tl:FFFF0000 tr:FFFF0000 bl:FFFF0000 br:FFFF0000" />
+            <Property name="ImageColours" value="tl:FFFF0200 tr:FFFF0000 bl:FFFF0000 br:FFFF0000" />
+            <Property name="BackgroundColours" value="tl:FF000000 tr:FF000000 bl:AAA00000 br:FF000000" />
+            <Property name="BackgroundEnabled" value="false" />
+        </Window>
+    </Window>
+</GUILayout>

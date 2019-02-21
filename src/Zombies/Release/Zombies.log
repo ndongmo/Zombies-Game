@@ -1,0 +1,296 @@
+﻿  Agent.cpp
+d:\github\zombiesgame\src\zombies\Light.h(69): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
+d:\github\zombiesgame\src\zombies\Light.h(71): warning C4018: '>' : signed/unsigned mismatch
+d:\github\zombiesgame\src\zombies\Coffer.h(17): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+Agent.cpp(135): warning C4244: 'initializing' : conversion from 'float' to 'int', possible loss of data
+Agent.cpp(136): warning C4244: 'initializing' : conversion from 'float' to 'int', possible loss of data
+Agent.cpp(137): warning C4244: 'initializing' : conversion from 'float' to 'int', possible loss of data
+Agent.cpp(138): warning C4244: 'initializing' : conversion from 'float' to 'int', possible loss of data
+Agent.cpp(140): warning C4018: '<=' : signed/unsigned mismatch
+Agent.cpp(142): warning C4018: '<=' : signed/unsigned mismatch
+Agent.cpp(162): warning C4305: '+=' : truncation from 'double' to 'float'
+Agent.cpp(163): warning C4305: '-=' : truncation from 'double' to 'float'
+  Ammo.cpp
+  Bag.cpp
+d:\github\zombiesgame\src\zombies\Light.h(69): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
+d:\github\zombiesgame\src\zombies\Light.h(71): warning C4018: '>' : signed/unsigned mismatch
+d:\github\zombiesgame\src\zombies\Coffer.h(17): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+  Door.cpp
+d:\github\zombiesgame\src\zombies\Light.h(69): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
+d:\github\zombiesgame\src\zombies\Light.h(71): warning C4018: '>' : signed/unsigned mismatch
+d:\github\zombiesgame\src\zombies\Coffer.h(17): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+  EditorHandler.cpp
+d:\github\zombiesgame\src\zombies\Light.h(69): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
+d:\github\zombiesgame\src\zombies\Light.h(71): warning C4018: '>' : signed/unsigned mismatch
+d:\github\zombiesgame\src\zombies\Coffer.h(17): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+EditorHandler.cpp(214): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+EditorHandler.cpp(219): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+EditorHandler.cpp(274): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+  Flashlight.cpp
+d:\github\zombiesgame\src\zombies\Light.h(69): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
+d:\github\zombiesgame\src\zombies\Light.h(71): warning C4018: '>' : signed/unsigned mismatch
+d:\github\zombiesgame\src\zombies\Coffer.h(17): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+Flashlight.cpp(31): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+Flashlight.cpp(32): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+  GameScreen.cpp
+d:\github\zombiesgame\src\zombies\Light.h(69): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
+d:\github\zombiesgame\src\zombies\Light.h(71): warning C4018: '>' : signed/unsigned mismatch
+d:\github\zombiesgame\src\zombies\Coffer.h(17): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+GameScreen.cpp(73): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+GameScreen.cpp(76): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+  GuiDialog.cpp
+  GuiPauseMenu.cpp
+d:\github\zombiesgame\src\zombies\Light.h(69): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
+d:\github\zombiesgame\src\zombies\Light.h(71): warning C4018: '>' : signed/unsigned mismatch
+d:\github\zombiesgame\src\zombies\Coffer.h(17): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+  Key.cpp
+d:\github\zombiesgame\src\zombies\Light.h(69): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
+d:\github\zombiesgame\src\zombies\Light.h(71): warning C4018: '>' : signed/unsigned mismatch
+d:\github\zombiesgame\src\zombies\Coffer.h(17): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+  LeaderFollowingAI.cpp
+  LevelEditor.cpp
+d:\github\zombiesgame\src\zombies\Light.h(69): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
+d:\github\zombiesgame\src\zombies\Light.h(71): warning C4018: '>' : signed/unsigned mismatch
+d:\github\zombiesgame\src\zombies\Coffer.h(17): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+LevelEditor.cpp(126): warning C4018: '<' : signed/unsigned mismatch
+  LevelManager.cpp
+LevelManager.cpp(8): warning C4101: 'last' : unreferenced local variable
+LevelManager.cpp(8): warning C4101: 'min' : unreferenced local variable
+  MigrantBehavior.cpp
+d:\github\zombiesgame\src\zombies\Light.h(69): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
+d:\github\zombiesgame\src\zombies\Light.h(71): warning C4018: '>' : signed/unsigned mismatch
+d:\github\zombiesgame\src\zombies\Coffer.h(17): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+  MoveBehavior.cpp
+d:\github\zombiesgame\src\zombies\Light.h(69): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
+d:\github\zombiesgame\src\zombies\Light.h(71): warning C4018: '>' : signed/unsigned mismatch
+d:\github\zombiesgame\src\zombies\Coffer.h(17): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+MoveBehavior.cpp(4): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
+MoveBehavior.cpp(41): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+  Player.cpp
+d:\github\zombiesgame\src\zombies\Light.h(69): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
+d:\github\zombiesgame\src\zombies\Light.h(71): warning C4018: '>' : signed/unsigned mismatch
+d:\github\zombiesgame\src\zombies\Coffer.h(17): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+Player.cpp(148): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+Player.cpp(153): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+Player.cpp(184): warning C4244: '=' : conversion from 'float' to 'unsigned int', possible loss of data
+Player.cpp(185): warning C4244: '=' : conversion from 'float' to 'unsigned int', possible loss of data
+Player.cpp(186): warning C4244: '=' : conversion from 'float' to 'unsigned int', possible loss of data
+  PlayerRenderer.cpp
+d:\github\zombiesgame\src\zombies\Light.h(69): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
+d:\github\zombiesgame\src\zombies\Light.h(71): warning C4018: '>' : signed/unsigned mismatch
+d:\github\zombiesgame\src\zombies\Coffer.h(17): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+  Sensor.cpp
+d:\github\zombiesgame\src\zombies\Light.h(69): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
+d:\github\zombiesgame\src\zombies\Light.h(71): warning C4018: '>' : signed/unsigned mismatch
+d:\github\zombiesgame\src\zombies\Coffer.h(17): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+  SightSensor.cpp
+d:\github\zombiesgame\src\zombies\Light.h(69): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
+d:\github\zombiesgame\src\zombies\Light.h(71): warning C4018: '>' : signed/unsigned mismatch
+d:\github\zombiesgame\src\zombies\Coffer.h(17): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+SightSensor.cpp(69): warning C4244: 'initializing' : conversion from 'int' to 'float', possible loss of data
+SightSensor.cpp(70): warning C4244: 'initializing' : conversion from 'float' to 'unsigned int', possible loss of data
+SightSensor.cpp(71): warning C4244: 'initializing' : conversion from 'float' to 'unsigned int', possible loss of data
+  StaggingBehavior.cpp
+d:\github\zombiesgame\src\zombies\Light.h(69): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
+d:\github\zombiesgame\src\zombies\Light.h(71): warning C4018: '>' : signed/unsigned mismatch
+d:\github\zombiesgame\src\zombies\Coffer.h(17): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+  Compiling...
+  SteeringAI.cpp
+d:\github\zombiesgame\src\zombies\Light.h(69): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
+d:\github\zombiesgame\src\zombies\Light.h(71): warning C4018: '>' : signed/unsigned mismatch
+d:\github\zombiesgame\src\zombies\Coffer.h(17): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+  EntityController.cpp
+d:\github\zombiesgame\src\zombies\Light.h(69): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
+d:\github\zombiesgame\src\zombies\Light.h(71): warning C4018: '>' : signed/unsigned mismatch
+d:\github\zombiesgame\src\zombies\Coffer.h(17): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+  App.cpp
+d:\github\zombiesgame\src\zombies\Light.h(69): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
+d:\github\zombiesgame\src\zombies\Light.h(71): warning C4018: '>' : signed/unsigned mismatch
+d:\github\zombiesgame\src\zombies\Coffer.h(17): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+C:\Program Files\Microsoft Visual Studio 12.0\VC\include\memory(1639): warning C4316: 'GameScreen' : object allocated on the heap may not be aligned 16
+          App.cpp(53) : see reference to function template instantiation 'std::unique_ptr<GameScreen,std::default_delete<_Ty>> std::make_unique<GameScreen,>(void)' being compiled
+          with
+          [
+              _Ty=GameScreen
+          ]
+C:\Program Files\Microsoft Visual Studio 12.0\VC\include\memory(1639): warning C4316: 'MainMenuScreen' : object allocated on the heap may not be aligned 16
+          App.cpp(54) : see reference to function template instantiation 'std::unique_ptr<MainMenuScreen,std::default_delete<_Ty>> std::make_unique<MainMenuScreen,>(void)' being compiled
+          with
+          [
+              _Ty=MainMenuScreen
+          ]
+C:\Program Files\Microsoft Visual Studio 12.0\VC\include\memory(1639): warning C4316: 'EditorScreen' : object allocated on the heap may not be aligned 16
+          App.cpp(55) : see reference to function template instantiation 'std::unique_ptr<EditorScreen,std::default_delete<_Ty>> std::make_unique<EditorScreen,>(void)' being compiled
+          with
+          [
+              _Ty=EditorScreen
+          ]
+  Coffer.cpp
+d:\github\zombiesgame\src\zombies\Coffer.h(17): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+d:\github\zombiesgame\src\zombies\Light.h(69): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
+d:\github\zombiesgame\src\zombies\Light.h(71): warning C4018: '>' : signed/unsigned mismatch
+  Bullet.cpp
+d:\github\zombiesgame\src\zombies\Light.h(69): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
+d:\github\zombiesgame\src\zombies\Light.h(71): warning C4018: '>' : signed/unsigned mismatch
+d:\github\zombiesgame\src\zombies\Coffer.h(17): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+Bullet.cpp(54): warning C4244: 'initializing' : conversion from 'float' to 'int', possible loss of data
+Bullet.cpp(55): warning C4244: 'initializing' : conversion from 'float' to 'int', possible loss of data
+Bullet.cpp(56): warning C4244: 'initializing' : conversion from 'float' to 'int', possible loss of data
+Bullet.cpp(57): warning C4244: 'initializing' : conversion from 'float' to 'int', possible loss of data
+Bullet.cpp(59): warning C4018: '<=' : signed/unsigned mismatch
+Bullet.cpp(61): warning C4018: '<=' : signed/unsigned mismatch
+  EditorScreen.cpp
+d:\github\zombiesgame\src\zombies\Light.h(69): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
+d:\github\zombiesgame\src\zombies\Light.h(71): warning C4018: '>' : signed/unsigned mismatch
+d:\github\zombiesgame\src\zombies\Coffer.h(17): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+EditorScreen.cpp(48): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+EditorScreen.cpp(50): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+EditorScreen.cpp(172): warning C4244: '+=' : conversion from 'float' to 'unsigned int', possible loss of data
+EditorScreen.cpp(173): warning C4244: '+=' : conversion from 'float' to 'unsigned int', possible loss of data
+EditorScreen.cpp(255): warning C4244: 'argument' : conversion from 'float' to 'GLsizei', possible loss of data
+EditorScreen.cpp(255): warning C4244: 'argument' : conversion from 'float' to 'GLint', possible loss of data
+EditorScreen.cpp(263): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+EditorScreen.cpp(264): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+EditorScreen.cpp(417): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+EditorScreen.cpp(418): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+  Entity.cpp
+d:\github\zombiesgame\src\zombies\Light.h(69): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
+d:\github\zombiesgame\src\zombies\Light.h(71): warning C4018: '>' : signed/unsigned mismatch
+d:\github\zombiesgame\src\zombies\Coffer.h(17): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+Entity.cpp(71): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+  GraphEdge.cpp
+GraphEdge.cpp(14): warning C4244: 'initializing' : conversion from 'int' to 'float', possible loss of data
+  GraphNode.cpp
+  GuiEditor.cpp
+d:\github\zombiesgame\src\zombies\Light.h(69): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
+d:\github\zombiesgame\src\zombies\Light.h(71): warning C4018: '>' : signed/unsigned mismatch
+d:\github\zombiesgame\src\zombies\Coffer.h(17): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+GuiEditor.cpp(1159): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+GuiEditor.cpp(1168): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+GuiEditor.cpp(1179): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+GuiEditor.cpp(1187): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+GuiEditor.cpp(1200): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+GuiEditor.cpp(1208): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+GuiEditor.cpp(1218): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+GuiEditor.cpp(1227): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+GuiEditor.cpp(1236): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+GuiEditor.cpp(1356): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+GuiEditor.cpp(1480): warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+GuiEditor.cpp(1494): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+GuiEditor.cpp(1508): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+GuiEditor.cpp(1522): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+GuiEditor.cpp(1536): warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+GuiEditor.cpp(1550): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+GuiEditor.cpp(1564): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+GuiEditor.cpp(1639): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+GuiEditor.cpp(1653): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+GuiEditor.cpp(1665): warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+GuiEditor.cpp(1675): warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+GuiEditor.cpp(1687): warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+GuiEditor.cpp(1709): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+GuiEditor.cpp(1733): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+GuiEditor.cpp(1743): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+GuiEditor.cpp(1756): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+GuiEditor.cpp(1766): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+GuiEditor.cpp(1776): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+GuiEditor.cpp(1818): warning C4244: '=' : conversion from 'double' to 'unsigned int', possible loss of data
+GuiEditor.cpp(1842): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+GuiEditor.cpp(1847): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+GuiEditor.cpp(1927): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+GuiEditor.cpp(1932): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+GuiEditor.cpp(1943): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+GuiEditor.cpp(1965): warning C4244: '=' : conversion from 'double' to 'unsigned int', possible loss of data
+GuiEditor.cpp(1971): warning C4244: '=' : conversion from 'double' to 'unsigned int', possible loss of data
+GuiEditor.cpp(1988): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+GuiEditor.cpp(1989): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+GuiEditor.cpp(1990): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+GuiEditor.cpp(1991): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+  GuiMainMenu.cpp
+  GuiMenuConfig.cpp
+  Gun.cpp
+d:\github\zombiesgame\src\zombies\Light.h(69): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
+d:\github\zombiesgame\src\zombies\Light.h(71): warning C4018: '>' : signed/unsigned mismatch
+d:\github\zombiesgame\src\zombies\Coffer.h(17): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+Gun.cpp(73): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
+  Human.cpp
+d:\github\zombiesgame\src\zombies\Light.h(69): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
+d:\github\zombiesgame\src\zombies\Light.h(71): warning C4018: '>' : signed/unsigned mismatch
+d:\github\zombiesgame\src\zombies\Coffer.h(17): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+Human.cpp(49): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+Human.cpp(53): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+  HumanAI.cpp
+d:\github\zombiesgame\src\zombies\Light.h(69): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
+d:\github\zombiesgame\src\zombies\Light.h(71): warning C4018: '>' : signed/unsigned mismatch
+d:\github\zombiesgame\src\zombies\Coffer.h(17): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+  Level.cpp
+d:\github\zombiesgame\src\zombies\Light.h(69): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
+d:\github\zombiesgame\src\zombies\Light.h(71): warning C4018: '>' : signed/unsigned mismatch
+d:\github\zombiesgame\src\zombies\Coffer.h(17): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+Level.cpp(97): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+Level.cpp(98): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+Level.cpp(216): warning C4018: '<' : signed/unsigned mismatch
+Level.cpp(231): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
+  LevelGenerator.cpp
+d:\github\zombiesgame\src\zombies\Light.h(69): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
+d:\github\zombiesgame\src\zombies\Light.h(71): warning C4018: '>' : signed/unsigned mismatch
+d:\github\zombiesgame\src\zombies\Coffer.h(17): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+  LevelHandler.cpp
+d:\github\zombiesgame\src\zombies\Light.h(69): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
+d:\github\zombiesgame\src\zombies\Light.h(71): warning C4018: '>' : signed/unsigned mismatch
+d:\github\zombiesgame\src\zombies\Coffer.h(17): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+LevelHandler.cpp(234): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+LevelHandler.cpp(239): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+LevelHandler.cpp(308): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+  LevelReaderWriter.cpp
+  main.cpp
+  Compiling...
+  MainMenuScreen.cpp
+MainMenuScreen.cpp(25): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+  Medicine.cpp
+d:\github\zombiesgame\src\zombies\Light.h(69): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
+d:\github\zombiesgame\src\zombies\Light.h(71): warning C4018: '>' : signed/unsigned mismatch
+d:\github\zombiesgame\src\zombies\Coffer.h(17): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+  NpcAI.cpp
+  Object.cpp
+d:\github\zombiesgame\src\zombies\Light.h(69): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
+d:\github\zombiesgame\src\zombies\Light.h(71): warning C4018: '>' : signed/unsigned mismatch
+d:\github\zombiesgame\src\zombies\Coffer.h(17): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+  GameRenderer.cpp
+d:\github\zombiesgame\src\zombies\Light.h(69): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
+d:\github\zombiesgame\src\zombies\Light.h(71): warning C4018: '>' : signed/unsigned mismatch
+d:\github\zombiesgame\src\zombies\Coffer.h(17): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+GameRenderer.cpp(32): warning C4244: 'argument' : conversion from 'float' to 'GLsizei', possible loss of data
+GameRenderer.cpp(538): warning C4018: '>' : signed/unsigned mismatch
+GameRenderer.cpp(539): warning C4018: '>' : signed/unsigned mismatch
+GameRenderer.cpp(541): warning C4018: '<' : signed/unsigned mismatch
+GameRenderer.cpp(542): warning C4018: '<' : signed/unsigned mismatch
+GameRenderer.cpp(547): warning C4018: '<' : signed/unsigned mismatch
+GameRenderer.cpp(548): warning C4018: '<' : signed/unsigned mismatch
+GameRenderer.cpp(557): warning C4018: '<' : signed/unsigned mismatch
+GameRenderer.cpp(558): warning C4018: '<' : signed/unsigned mismatch
+GameRenderer.cpp(811): warning C4018: '<' : signed/unsigned mismatch
+GameRenderer.cpp(813): warning C4018: '<' : signed/unsigned mismatch
+  PlayerAI.cpp
+d:\github\zombiesgame\src\zombies\Light.h(69): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
+d:\github\zombiesgame\src\zombies\Light.h(71): warning C4018: '>' : signed/unsigned mismatch
+  Shape.cpp
+  Tile.cpp
+  TouchSensor.cpp
+d:\github\zombiesgame\src\zombies\Light.h(69): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
+d:\github\zombiesgame\src\zombies\Light.h(71): warning C4018: '>' : signed/unsigned mismatch
+d:\github\zombiesgame\src\zombies\Coffer.h(17): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+  XmlExtractor.cpp
+d:\github\zombiesgame\src\zombies\Light.h(69): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
+d:\github\zombiesgame\src\zombies\Light.h(71): warning C4018: '>' : signed/unsigned mismatch
+d:\github\zombiesgame\src\zombies\Coffer.h(17): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+  Zombie.cpp
+d:\github\zombiesgame\src\zombies\Light.h(69): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
+d:\github\zombiesgame\src\zombies\Light.h(71): warning C4018: '>' : signed/unsigned mismatch
+d:\github\zombiesgame\src\zombies\Coffer.h(17): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+  ZombieAI.cpp
+d:\github\zombiesgame\src\zombies\Light.h(69): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
+d:\github\zombiesgame\src\zombies\Light.h(71): warning C4018: '>' : signed/unsigned mismatch
+d:\github\zombiesgame\src\zombies\Coffer.h(17): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+  Generating code
+  Finished generating code
+  Zombies.vcxproj -> D:\GITHUB\ZombiesGame\src\Release\Zombies.exe

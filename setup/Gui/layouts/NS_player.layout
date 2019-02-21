@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<GUILayout version="4" >
+    <Window type="DefaultWindow" name="wnd_player" >
+        <Property name="Area" value="{{0,0},{0,0},{1,0},{1,0}}" />
+        <Property name="Text" value="Player" />
+        <Property name="MaxSize" value="{{1,0},{1,0}}" />
+        <Window type="TaharezLook/GroupBox" name="gbx_members" >
+            <Property name="Area" value="{{0,5},{0,5},{0.65,-5},{1,-5}}" />
+            <Property name="Text" value="Members" />
+            <Property name="MaxSize" value="{{1,0},{1,0}}" />
+            <Window type="TaharezLook/Label" name="lbl_keys" >
+                <Property name="Area" value="{{0,0},{0,0},{0.28,-2},{0.13,0}}" />
+                <Property name="Text" value="Keys" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Property name="HorzFormatting" value="LeftAligned" />
+            </Window>
+            <Window type="TaharezLook/Spinner" name="spn_keys" >
+                <Property name="Area" value="{{0.28,0},{0,0},{0.5,-2},{0.13,0}}" />
+                <Property name="Text" value="0" />
+                <Property name="MaximumValue" value="99" />
+                <Property name="MinimumValue" value="0" />
+                <AutoWindow namePath="__auto_editbox__" >
+                    <Property name="Text" value="0" />
+                    <Property name="ValidationString" value="-?\d*" />
+                </AutoWindow>
+                <AutoWindow namePath="__auto_incbtn__" >
+                    <Property name="WantsMultiClickEvents" value="false" />
+                    <Property name="MouseAutoRepeatEnabled" value="true" />
+                </AutoWindow>
+                <AutoWindow namePath="__auto_decbtn__" >
+                    <Property name="WantsMultiClickEvents" value="false" />
+                    <Property name="MouseAutoRepeatEnabled" value="true" />
+                </AutoWindow>
+            </Window>
+            <Window type="TaharezLook/Checkbox" name="chb_lightOn" >
+                <Property name="Area" value="{{0,0},{0.15,0},{0.5,-2},{0.27,0}}" />
+                <Property name="Text" value="FlashLight" />
+                <Property name="Selected" value="true" />
+            </Window>
+            <Window type="TaharezLook/Checkbox" name="chb_gun1" >
+                <Property name="Area" value="{{0,0},{0.3,0},{0.5,-2},{0.43,0}}" />
+                <Property name="Text" value="Gun 1" />
+            </Window>
+            <Window type="TaharezLook/Checkbox" name="chb_gun2" >
+                <Property name="Area" value="{{0,0},{0.45,0},{0.5,-2},{0.58,0}}" />
+                <Property name="Text" value="Gun 2" />
+            </Window>
+            <Window type="TaharezLook/Checkbox" name="chb_sourceLight" >
+                <Property name="Area" value="{{0,0},{0.6,0},{0.5,-2},{0.73,0}}" />
+                <Property name="Text" value="Source  light" />
+                <Property name="Selected" value="true" />
+            </Window>
+            <Window type="TaharezLook/Checkbox" name="chb_aroundLight" >
+                <Property name="Area" value="{{0,0},{0.75,0},{0.5,-2},{0.88,0}}" />
+                <Property name="Text" value="Around  light" />
+                <Property name="Selected" value="true" />
+            </Window>
+            <Window type="TaharezLook/Checkbox" name="chb_diffLight" >
+                <Property name="Area" value="{{0,0},{0.9,0},{0.5,-2},{1,0}}" />
+                <Property name="Text" value="Diffuse  light" />
+                <Property name="Selected" value="true" />
+            </Window>
+            <Window type="TaharezLook/Label" name="lbl_speed" >
+                <Property name="Area" value="{{0.5,2},{0,0},{0.75,-2},{0.13,0}}" />
+                <Property name="Text" value="Speed" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Property name="HorzFormatting" value="LeftAligned" />
+            </Window>
+            <Window type="TaharezLook/Spinner" name="spn_speed" >
+                <Property name="Area" value="{{0.75,0},{0,0},{1,-2},{0.13,0}}" />
+                <Property name="Text" value="1" />
+                <Property name="CurrentValue" value="1" />
+                <Property name="MinimumValue" value="0" />
+                <Property name="TextInputMode" value="FloatingPoint" />
+                <AutoWindow namePath="__auto_editbox__" >
+                    <Property name="Text" value="1" />
+                    <Property name="ValidationString" value="-?\d*\.?\d*" />
+                </AutoWindow>
+                <AutoWindow namePath="__auto_incbtn__" >
+                    <Property name="WantsMultiClickEvents" value="false" />
+                    <Property name="MouseAutoRepeatEnabled" value="true" />
+                </AutoWindow>
+                <AutoWindow namePath="__auto_decbtn__" >
+                    <Property name="WantsMultiClickEvents" value="false" />
+                    <Property name="MouseAutoRepeatEnabled" value="true" />
+                </AutoWindow>
+            </Window>
+            <Window type="TaharezLook/Spinner" name="spn_health" >
+                <Property name="Area" value="{{0.75,0},{0.15,0},{1,-2},{0.27,0}}" />
+                <Property name="Text" value="1" />
+                <Property name="CurrentValue" value="1" />
+                <Property name="MinimumValue" value="0" />
+                <Property name="TextInputMode" value="FloatingPoint" />
+                <AutoWindow namePath="__auto_editbox__" >
+                    <Property name="Text" value="1" />
+                    <Property name="ValidationString" value="-?\d*\.?\d*" />
+                </AutoWindow>
+                <AutoWindow namePath="__auto_incbtn__" >
+                    <Property name="WantsMultiClickEvents" value="false" />
+                    <Property name="MouseAutoRepeatEnabled" value="true" />
+                </AutoWindow>
+                <AutoWindow namePath="__auto_decbtn__" >
+                    <Property name="WantsMultiClickEvents" value="false" />
+                    <Property name="MouseAutoRepeatEnabled" value="true" />
+                </AutoWindow>
+            </Window>
+            <Window type="TaharezLook/Label" name="lbl_health" >
+                <Property name="Area" value="{{0.5,2},{0.15,0},{0.75,-2},{0.27,0}}" />
+                <Property name="Text" value="Health" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Property name="HorzFormatting" value="LeftAligned" />
+            </Window>
+        </Window>
+        <Window type="TaharezLook/GroupBox" name="gbx_selected" >
+            <Property name="Area" value="{{0.65,0},{0,0},{1,-5},{1,-5}}" />
+            <Property name="Text" value="Selected" />
+            <Property name="MaxSize" value="{{1,0},{1,0}}" />
+            <Window type="TaharezLook/RadioButton" name="rbt_this" >
+                <Property name="Area" value="{{0,0},{0,0},{1,-5},{0.13,-2}}" />
+                <Property name="Text" value="This (player)" />
+                <Property name="Selected" value="true" />
+            </Window>
+            <Window type="TaharezLook/RadioButton" name="rbt_gun1" >
+                <Property name="Area" value="{{0,0},{0.15,0},{1,-5},{0.28,-2}}" />
+                <Property name="Text" value="Gun 1" />
+            </Window>
+            <Window type="TaharezLook/RadioButton" name="rbt_gun2" >
+                <Property name="Area" value="{{0,0},{0.3,0},{1,-5},{0.43,-2}}" />
+                <Property name="Text" value="Gun 2" />
+            </Window>
+            <Window type="TaharezLook/RadioButton" name="rbt_sourceLight" >
+                <Property name="Area" value="{{0,0},{0.45,0},{1,-5},{0.58,-2}}" />
+                <Property name="Text" value="Source Light" />
+            </Window>
+            <Window type="TaharezLook/RadioButton" name="rbt_aroundLight" >
+                <Property name="Area" value="{{0,0},{0.6,0},{1,-5},{0.73,-2}}" />
+                <Property name="Text" value="Around Light" />
+            </Window>
+            <Window type="TaharezLook/RadioButton" name="rbt_diffLight" >
+                <Property name="Area" value="{{0,0},{0.75,0},{1,-5},{0.88,-2}}" />
+                <Property name="Text" value="Diffuse Light" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

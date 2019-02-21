@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<GUILayout version="4" >
+    <Window type="TaharezLook/FrameWindow" name="fw_frame" >
+        <Property name="Area" value="{{0,0},{0,0},{0.36,10},{1,0}}" />
+        <Property name="Text" value="Level Editor" />
+        <Property name="TitlebarFont" value="DejaVuSans-12" />
+        <Property name="DragMovingEnabled" value="false" />
+        <Property name="CloseButtonEnabled" value="false" />
+        <AutoWindow namePath="__auto_titlebar__" >
+            <Property name="Font" value="DejaVuSans-12" />
+            <Property name="DraggingEnabled" value="false" />
+        </AutoWindow>
+        <Window type="TaharezLook/StaticImage" name="ctn_entities" >
+            <Property name="Area" value="{{0,0},{0,10},{1,0},{0.4,-0.5}}" />
+            <Property name="MaxSize" value="{{1,0},{1,0}}" />
+            <Window type="TaharezLook/GroupBox" name="gbx_color" >
+                <Property name="Area" value="{{0,0},{0,0},{0.4,-2},{1,0}}" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Property name="FrameColours" value="tl:00FFFFFF tr:00FFFFFF bl:00FFFFFF br:00FFFFFF" />
+                <Window type="TaharezLook/Slider" name="sld_red" >
+                    <Property name="Area" value="{{0,2},{0,2},{0,12},{0.4,2}}" />
+                </Window>
+                <Window type="TaharezLook/Slider" name="sld_green" >
+                    <Property name="Area" value="{{0,16},{0,2},{0,28},{0.4,2}}" />
+                </Window>
+                <Window type="TaharezLook/Slider" name="sld_blue" >
+                    <Property name="Area" value="{{0,30},{0,2},{0,42},{0.4,2}}" />
+                </Window>
+                <Window type="TaharezLook/Slider" name="sld_alpha" >
+                    <Property name="Area" value="{{0,44},{0,2},{0,56},{0.4,2}}" />
+                </Window>
+                <Window type="TaharezLook/Combobox" name="cbx_texture" >
+                    <Property name="Area" value="{{0,2},{0.4,8},{1,-2},{0.85,0}}" />
+                    <Property name="Text" value="Pick texture" />
+                    <Property name="ReadOnly" value="true" />
+                    <AutoWindow namePath="__auto_editbox__" >
+                        <Property name="Text" value="Pick texture" />
+                        <Property name="ReadOnly" value="true" />
+                        <Property name="ActiveSelectionColour" value="tl:FF6060FF tr:FF6060FF bl:FF6060FF br:FF6060FF" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_droplist__" >
+                        <AutoWindow namePath="__auto_hscrollbar__" >
+                            <AutoWindow namePath="__auto_incbtn__" >
+                                <Property name="RestoreOldCapture" value="true" />
+                            </AutoWindow>
+                            <AutoWindow namePath="__auto_decbtn__" >
+                                <Property name="RestoreOldCapture" value="true" />
+                            </AutoWindow>
+                            <AutoWindow namePath="__auto_thumb__" >
+                                <Property name="RestoreOldCapture" value="true" />
+                            </AutoWindow>
+                        </AutoWindow>
+                        <AutoWindow namePath="__auto_vscrollbar__" >
+                            <AutoWindow namePath="__auto_incbtn__" >
+                                <Property name="RestoreOldCapture" value="true" />
+                            </AutoWindow>
+                            <AutoWindow namePath="__auto_decbtn__" >
+                                <Property name="RestoreOldCapture" value="true" />
+                            </AutoWindow>
+                            <AutoWindow namePath="__auto_thumb__" >
+                                <Property name="RestoreOldCapture" value="true" />
+                            </AutoWindow>
+                        </AutoWindow>
+                    </AutoWindow>
+                </Window>
+                <Window type="TaharezLook/Label" name="lbl_dimTexture" >
+                    <Property name="Area" value="{{0,0},{0.85,5},{0.4,-1},{1,-1}}" />
+                    <Property name="Text" value="T.Dims" />
+                    <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                    <Property name="TooltipText" value="Texture dimensions" />
+                    <Property name="HorzFormatting" value="LeftAligned" />
+                </Window>
+                <Window type="TaharezLook/Spinner" name="spn_texDimX" >
+                    <Property name="Area" value="{{0.4,0},{0.85,5},{0.7,0},{1,-1}}" />
+                    <Property name="Text" value="1" />
+                    <Property name="CurrentValue" value="1" />
+                    <Property name="MaximumValue" value="99" />
+                    <Property name="MinimumValue" value="1" />
+                    <AutoWindow namePath="__auto_editbox__" >
+                        <Property name="Text" value="1" />
+                        <Property name="ValidationString" value="-?\d*" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_incbtn__" >
+                        <Property name="WantsMultiClickEvents" value="false" />
+                        <Property name="MouseAutoRepeatEnabled" value="true" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_decbtn__" >
+                        <Property name="WantsMultiClickEvents" value="false" />
+                        <Property name="MouseAutoRepeatEnabled" value="true" />
+                    </AutoWindow>
+                </Window>
+                <Window type="TaharezLook/Spinner" name="spn_texDimY" >
+                    <Property name="Area" value="{{0.7,0},{0.85,5},{1,0},{1,-1}}" />
+                    <Property name="Text" value="1" />
+                    <Property name="CurrentValue" value="1" />
+                    <Property name="MaximumValue" value="99" />
+                    <Property name="MinimumValue" value="1" />
+                    <AutoWindow namePath="__auto_editbox__" >
+                        <Property name="Text" value="1" />
+                        <Property name="ValidationString" value="-?\d*" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_incbtn__" >
+                        <Property name="WantsMultiClickEvents" value="false" />
+                        <Property name="MouseAutoRepeatEnabled" value="true" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_decbtn__" >
+                        <Property name="WantsMultiClickEvents" value="false" />
+                        <Property name="MouseAutoRepeatEnabled" value="true" />
+                    </AutoWindow>
+                </Window>
+                <Window type="TaharezLook/FrameWindow" name="img_color" >
+                    <Property name="Area" value="{{0,59},{0,2},{1,-20},{0.4,2}}" />
+                    <Property name="MinSize" value="{{0,0},{0,0}}" />
+                    <Property name="FrameEnabled" value="false" />
+                    <Property name="RollUpEnabled" value="false" />
+                    <Property name="SizingEnabled" value="false" />
+                    <Property name="TitlebarEnabled" value="false" />
+                    <Property name="DragMovingEnabled" value="false" />
+                    <Property name="CloseButtonEnabled" value="false" />
+                    <Property name="SizingBorderThickness" value="0" />
+                    <AutoWindow namePath="__auto_titlebar__" >
+                        <Property name="DraggingEnabled" value="false" />
+                    </AutoWindow>
+                </Window>
+            </Window>
+            <Window type="TaharezLook/GroupBox" name="gbx_entityState" >
+                <Property name="Area" value="{{0.4,5},{0,5},{1,-5},{0.2,2}}" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Window type="TaharezLook/RadioButton" name="rbt_dynamic" >
+                    <Property name="Area" value="{{0,1},{0,1},{0.5,-1},{1,-1}}" />
+                    <Property name="Text" value="Dynamic" />
+                    <Property name="Selected" value="true" />
+                </Window>
+                <Window type="TaharezLook/RadioButton" name="rbt_static" >
+                    <Property name="Area" value="{{0.5,2},{0,1},{1,-1},{1,-1}}" />
+                    <Property name="Text" value="Static" />
+                </Window>
+            </Window>
+            <Window type="TaharezLook/GroupBox" name="gbx_shape" >
+                <Property name="Area" value="{{0.4,5},{0.2,5},{1,-5},{0.4,-2}}" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Window type="TaharezLook/RadioButton" name="rbt_circle" >
+                    <Property name="Area" value="{{0,2},{0,2},{0.5,-1},{1,-1}}" />
+                    <Property name="Text" value="Circle" />
+                    <Property name="Selected" value="true" />
+                </Window>
+                <Window type="TaharezLook/RadioButton" name="rbt_box" >
+                    <Property name="Area" value="{{0.5,1},{0,1},{1,-1},{1,-1}}" />
+                    <Property name="Text" value="Box" />
+                </Window>
+            </Window>
+            <Window type="TaharezLook/Label" name="lbl_width" >
+                <Property name="Area" value="{{0.4,5},{0.4,5},{0.6,-1},{0.5,-2}}" />
+                <Property name="Text" value="Width" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Property name="TooltipText" value="Width of shape" />
+            </Window>
+            <Window type="TaharezLook/Label" name="lbl_height" >
+                <Property name="Area" value="{{0.6,5},{0.4,5},{0.8,-1},{0.5,-2}}" />
+                <Property name="Text" value="Height" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Property name="TooltipText" value="Height of shape" />
+            </Window>
+            <Window type="TaharezLook/Label" name="lbl_animSpeed" >
+                <Property name="Area" value="{{0.8,5},{0.4,5},{1,-5},{0.5,-2}}" />
+                <Property name="Text" value="A.Speed" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Property name="TooltipText" value="Animation speed" />
+            </Window>
+            <Window type="TaharezLook/Spinner" name="spn_width" >
+                <Property name="Area" value="{{0.4,5},{0.5,5},{0.6,-1},{0.6,-2}}" />
+                <Property name="Text" value="0" />
+                <Property name="MinimumValue" value="0" />
+                <Property name="TextInputMode" value="FloatingPoint" />
+                <AutoWindow namePath="__auto_editbox__" >
+                    <Property name="Text" value="0" />
+                    <Property name="ValidationString" value="-?\d*\.?\d*" />
+                </AutoWindow>
+                <AutoWindow namePath="__auto_incbtn__" >
+                    <Property name="WantsMultiClickEvents" value="false" />
+                    <Property name="MouseAutoRepeatEnabled" value="true" />
+                </AutoWindow>
+                <AutoWindow namePath="__auto_decbtn__" >
+                    <Property name="WantsMultiClickEvents" value="false" />
+                    <Property name="MouseAutoRepeatEnabled" value="true" />
+                </AutoWindow>
+            </Window>
+            <Window type="TaharezLook/Spinner" name="spn_height" >
+                <Property name="Area" value="{{0.6,5},{0.5,5},{0.8,-1},{0.6,-2}}" />
+                <Property name="Text" value="0" />
+                <Property name="MinimumValue" value="0" />
+                <Property name="TextInputMode" value="FloatingPoint" />
+                <AutoWindow namePath="__auto_editbox__" >
+                    <Property name="Text" value="0" />
+                    <Property name="ValidationString" value="-?\d*\.?\d*" />
+                </AutoWindow>
+                <AutoWindow namePath="__auto_incbtn__" >
+                    <Property name="WantsMultiClickEvents" value="false" />
+                    <Property name="MouseAutoRepeatEnabled" value="true" />
+                </AutoWindow>
+                <AutoWindow namePath="__auto_decbtn__" >
+                    <Property name="WantsMultiClickEvents" value="false" />
+                    <Property name="MouseAutoRepeatEnabled" value="true" />
+                </AutoWindow>
+            </Window>
+            <Window type="TaharezLook/Spinner" name="spn_animSpeed" >
+                <Property name="Area" value="{{0.8,5},{0.5,5},{1,-5},{0.6,-2}}" />
+                <Property name="Text" value="0" />
+                <Property name="MinimumValue" value="0" />
+                <Property name="TextInputMode" value="FloatingPoint" />
+                <AutoWindow namePath="__auto_editbox__" >
+                    <Property name="Text" value="0" />
+                    <Property name="ValidationString" value="-?\d*\.?\d*" />
+                </AutoWindow>
+                <AutoWindow namePath="__auto_incbtn__" >
+                    <Property name="WantsMultiClickEvents" value="false" />
+                    <Property name="MouseAutoRepeatEnabled" value="true" />
+                </AutoWindow>
+                <AutoWindow namePath="__auto_decbtn__" >
+                    <Property name="WantsMultiClickEvents" value="false" />
+                    <Property name="MouseAutoRepeatEnabled" value="true" />
+                </AutoWindow>
+            </Window>
+            <Window type="TaharezLook/Label" name="lbl_direction" >
+                <Property name="Area" value="{{0.4,5},{0.6,5},{0.5,-2},{0.7,-2}}" />
+                <Property name="Text" value="Dir.x" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Property name="TooltipText" value="Direction horizontal axe" />
+            </Window>
+            <Window type="TaharezLook/Spinner" name="spn_dirX" >
+                <Property name="Area" value="{{0.5,5},{0.6,5},{0.7,-2},{0.7,-2}}" />
+                <Property name="Text" value="1" />
+                <Property name="CurrentValue" value="1" />
+                <Property name="MaximumValue" value="1" />
+                <Property name="MinimumValue" value="-1" />
+                <AutoWindow namePath="__auto_editbox__" >
+                    <Property name="Text" value="1" />
+                    <Property name="ValidationString" value="-?\d*" />
+                </AutoWindow>
+                <AutoWindow namePath="__auto_incbtn__" >
+                    <Property name="WantsMultiClickEvents" value="false" />
+                    <Property name="MouseAutoRepeatEnabled" value="true" />
+                </AutoWindow>
+                <AutoWindow namePath="__auto_decbtn__" >
+                    <Property name="WantsMultiClickEvents" value="false" />
+                    <Property name="MouseAutoRepeatEnabled" value="true" />
+                </AutoWindow>
+            </Window>
+            <Window type="TaharezLook/Label" name="lbl_directionY" >
+                <Property name="Area" value="{{0.7,5},{0.6,5},{0.8,-2},{0.7,-2}}" />
+                <Property name="Text" value="Dir.y" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Property name="TooltipText" value="Direction vertical axe" />
+            </Window>
+            <Window type="TaharezLook/Spinner" name="spn_dirY" >
+                <Property name="Area" value="{{0.8,5},{0.6,5},{1,-5},{0.7,-2}}" />
+                <Property name="Text" value="0" />
+                <Property name="MaximumValue" value="1" />
+                <Property name="MinimumValue" value="-1" />
+                <AutoWindow namePath="__auto_editbox__" >
+                    <Property name="Text" value="0" />
+                    <Property name="ValidationString" value="-?\d*" />
+                </AutoWindow>
+                <AutoWindow namePath="__auto_incbtn__" >
+                    <Property name="WantsMultiClickEvents" value="false" />
+                    <Property name="MouseAutoRepeatEnabled" value="true" />
+                </AutoWindow>
+                <AutoWindow namePath="__auto_decbtn__" >
+                    <Property name="WantsMultiClickEvents" value="false" />
+                    <Property name="MouseAutoRepeatEnabled" value="true" />
+                </AutoWindow>
+            </Window>
+            <Window type="TaharezLook/Label" name="lbl_name" >
+                <Property name="Area" value="{{0.4,5},{0.7,5},{0.55,-2},{0.8,-2}}" />
+                <Property name="Text" value="Name :" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+            </Window>
+            <Window type="TaharezLook/Editbox" name="ebx_name" >
+                <Property name="Area" value="{{0.6,5},{0.7,5},{1,-5},{0.8,-2}}" />
+                <Property name="Text" value="Unknown" />
+            </Window>
+        </Window>
+        <Window type="TaharezLook/TabControl" name="ctn_custom" >
+            <Property name="Area" value="{{0,0},{0.4,5},{1,0},{0.8,5}}" />
+            <Property name="TabHeight" value="{0,-1}" />
+            <AutoWindow namePath="__auto_TabPane__" >
+                <Property name="EnableBottom" value="1" />
+            </AutoWindow>
+            <AutoWindow namePath="__auto_TabPane__Buttons" >
+                <Property name="EnableTop" value="0" />
+            </AutoWindow>
+            <AutoWindow namePath="__auto_TabPane__ScrollLeft" >
+                <Property name="Visible" value="false" />
+            </AutoWindow>
+            <AutoWindow namePath="__auto_TabPane__ScrollRight" >
+                <Property name="Visible" value="false" />
+            </AutoWindow>
+        </Window>
+        <Window type="TaharezLook/StaticImage" name="ctn_action" >
+            <Property name="Area" value="{{0,0},{0.8,10},{1,0},{1,-10}}" />
+            <Property name="MaxSize" value="{{1,0},{1,0}}" />
+            <Window type="TaharezLook/Button" name="btn_load" >
+                <Property name="Area" value="{{0.4,5},{0.6,0},{0.6,-5},{1,-5}}" />
+                <Property name="Text" value="Load" />
+                <Property name="TooltipText" value="Load Another level" />
+            </Window>
+            <Window type="TaharezLook/Button" name="btn_save" >
+                <Property name="Area" value="{{0.6,5},{0.6,0},{0.8,-5},{1,-5}}" />
+                <Property name="Text" value="Save" />
+                <Property name="TooltipText" value="Save current level" />
+            </Window>
+            <Window type="TaharezLook/Button" name="btn_quit" >
+                <Property name="Area" value="{{0.8,6},{0.6,0},{1,-4},{1,-5}}" />
+                <Property name="Text" value="Quit" />
+                <Property name="TooltipText" value="Quit edition" />
+            </Window>
+            <Window type="TaharezLook/GroupBox" name="gbx_action" >
+                <Property name="Area" value="{{0,5},{0,5},{0.5,-5},{0.5,-5}}" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Window type="TaharezLook/RadioButton" name="rbt_place" >
+                    <Property name="Area" value="{{0,0},{0,0},{0.4,0},{1,0}}" />
+                    <Property name="Text" value="Place" />
+                    <Property name="Selected" value="true" />
+                </Window>
+                <Window type="TaharezLook/RadioButton" name="rbt_select" >
+                    <Property name="Area" value="{{0.5,0},{0,0},{1,0},{1,0}}" />
+                    <Property name="Text" value="Select" />
+                </Window>
+            </Window>
+            <Window type="TaharezLook/Checkbox" name="chb_debug" >
+                <Property name="Area" value="{{0.5,5},{0,15},{0.7,-5},{0.5,-5}}" />
+                <Property name="Text" value="Debug" />
+            </Window>
+            <Window type="TaharezLook/Checkbox" name="chb_playMusic" >
+                <Property name="Area" value="{{0.7,5},{0,15},{1,-5},{0.5,-5}}" />
+                <Property name="Text" value="Play music" />
+            </Window>
+            <Window type="TaharezLook/Button" name="btn_update" >
+                <Property name="Area" value="{{0,5},{0.6,0},{0.22,0},{1,-5}}" />
+                <Property name="Text" value="Update" />
+                <Property name="Disabled" value="true" />
+                <Property name="TooltipText" value="Load Another level" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

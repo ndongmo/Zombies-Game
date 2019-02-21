@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<GUILayout version="4" >
+    <Window type="TaharezLook/FrameWindow" name="wnd" >
+        <Property name="Area" value="{{0,0},{0,0},{0,645},{0,600}}" />
+        <Property name="Text" value="Pause Menu" />
+        <Property name="SizingEnabled" value="false" />
+        <Property name="DragMovingEnabled" value="false" />
+        <Property name="VerticalAlignment" value="Centre" />
+        <Property name="CloseButtonEnabled" value="false" />
+        <Property name="HorizontalAlignment" value="Centre" />
+        <AutoWindow namePath="__auto_titlebar__" >
+            <Property name="DraggingEnabled" value="false" />
+        </AutoWindow>
+        <Window type="TaharezLook/Button" name="bt_close" >
+            <Property name="Area" value="{{0,-2},{0,-2},{0,96},{0,31}}" />
+            <Property name="Text" value="Close" />
+            <Property name="VerticalAlignment" value="Bottom" />
+            <Property name="HorizontalAlignment" value="Right" />
+        </Window>
+        <Window type="TaharezLook/Button" name="bt_equip" >
+            <Property name="Area" value="{{0,0},{0,-2},{0,96},{0,31}}" />
+            <Property name="Text" value="Equip" />
+            <Property name="Disabled" value="true" />
+            <Property name="VerticalAlignment" value="Bottom" />
+        </Window>
+        <Window type="TaharezLook/Button" name="bt_use" >
+            <Property name="Area" value="{{0,100},{0,-2},{0,196},{0,31}}" />
+            <Property name="Text" value="Use" />
+            <Property name="Disabled" value="true" />
+            <Property name="VerticalAlignment" value="Bottom" />
+        </Window>
+        <Window type="TaharezLook/Button" name="bt_drop" >
+            <Property name="Area" value="{{0,200},{0,-2},{0,296},{0,31}}" />
+            <Property name="Text" value="Drop" />
+            <Property name="Disabled" value="true" />
+            <Property name="VerticalAlignment" value="Bottom" />
+        </Window>
+        <Window type="TaharezLook/ScrollablePane" name="layout" >
+            <Property name="Area" value="{{0,5},{0,0},{1,0},{0.8,0}}" />
+            <AutoWindow namePath="__auto_container__" >
+                <Property name="MouseInputPropagationEnabled" value="true" />
+            </AutoWindow>
+            <AutoWindow namePath="__auto_hscrollbar__" >
+                <Property name="AlwaysOnTop" value="true" />
+            </AutoWindow>
+            <AutoWindow namePath="__auto_vscrollbar__" >
+                <Property name="AlwaysOnTop" value="true" />
+            </AutoWindow>
+        </Window>
+        <Window type="TaharezLook/Button" name="bt_exit" >
+            <Property name="Area" value="{{0,-169},{0,-1},{0,-60},{0,32}}" />
+            <Property name="Text" value="Exit Game" />
+            <Property name="VerticalAlignment" value="Bottom" />
+            <Property name="HorizontalAlignment" value="Right" />
+        </Window>
+        <Window type="TaharezLook/StaticText" name="tx_desc" >
+            <Property name="Area" value="{{0,5},{0.8,10},{1,-5},{0.9,10}}" />
+            <Property name="MaxSize" value="{{1,0},{1,0}}" />
+            <Property name="HorzScrollPageSize" value="613" />
+            <Property name="VertScrollPageSize" value="46" />
+        </Window>
+    </Window>
+</GUILayout>
