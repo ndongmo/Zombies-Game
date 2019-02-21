@@ -55,7 +55,7 @@ void PlayerRenderer::init(float screenWidth, float screenHeight)
 	width = screenWidth * 0.04f;
 	heigh = screenHeight * 0.05f;
 	x = margin;
-	y = (screenWidth - heigh) / 2.0f;
+	y = (screenHeight - heigh) / 2.0f;
 	m_leftStuffRect = glm::vec4(x, y, width, heigh);
 
 	x = x + width + (margin * 2);
